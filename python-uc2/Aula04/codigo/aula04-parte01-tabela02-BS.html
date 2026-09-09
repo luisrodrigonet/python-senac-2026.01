@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        rel="stylesheet" >
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Ajustei a cor do texto-->
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Exemplo de uso das fontes</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#section1" class="nav-link"><i class="fas fa-info-circle icon"></i>Seção 1</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link"><i class="fas fa-book icon"></i>Seção 2</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link"><i class="fas fa-arrow-down icon"></i>Rodapé</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container py-5 ">
+
+        <!-- Título -->
+        <h1 class="mb-4 text-center">
+            Catálogo de Tênis Esportivos
+        </h1>
+
+
+        <!-- Container da Tabela -->
+        <div class="table-responsive-lg">
+
+            <!-- Tabela -->
+            <table class="table table-striped table-hover 
+                        align-middle shadow">
+
+                <!-- Cabeçalho -->   
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col" style="width: 15%">Foto</th>
+                        <th scope="col" style="width: 55%">Descrição</th>
+                        <th scope="col" style="width: 30%">Valor</th>
+                    </tr>
+                </thead>
+                
+                <!-- Corpo -->
+                <tbody>
+                    
+                    <!-- Item 1 -->
+                    <tr>
+                        <td>
+                            <img src="img/shoes1.jpg" 
+                                 class="img-thumbnail" 
+                                 alt="Nike Air Force">
+                        </td>
+                        <td>
+                            <h5 class="mb-1">Nike Air Force 1 '07</h5>
+                            <ul class="list-unstyled">
+                                <li><small>Cor: Branco</small></li>
+                                <li><small>Material: Couro premium</small></li>
+                                <li><span class="badge bg-success">Disponível</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span class="text-success fw-bold">R$ 899,90</span>
+                            <del class="text-muted d-block">R$ 1.099,90</del>
+                        </td>
+                    </tr>
+
+                    <!-- Item 2 -->
+                    <tr>
+                        <td>
+                            <img src="img/shoes2.jpg" 
+                                 class="img-thumbnail" 
+                                 alt="Adidas Superstar">
+                        </td>
+                        <td>
+                            <h5 class="mb-1">Adidas Superstar Foundation</h5>
+                            <ul class="list-unstyled">
+                                <li><small>Cor: Preto/Branco</small></li>
+                                <li><small>Característica: Shell toe</small></li>
+                                <li><span class="badge bg-warning text-dark">Últimas unidades</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span class="text-success fw-bold">R$ 499,90</span>
+                            <div class="mt-1">
+                                <small class="text-muted">ou 10x R$ 49,99</small>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                
+                <!-- Roda-pé -->
+                <tfoot class="table-secondary">
+                    <tr>
+                        <td colspan="3" class="text-center small">
+                            * Preços válidos até 30/08/2025 | 
+                            Frete grátis para compras acima de R$ 300,00
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+            <!-- Tabela -->
+
+        </div>
+        <!-- Container da Tabela -->
+
+
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted"><i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

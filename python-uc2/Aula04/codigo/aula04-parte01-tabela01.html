@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet" >
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+
+        /* Tabela Simples */
+        .tabela_simples {
+            border-collapse: collapse; 
+            /*border: 2px solid blue;*/
+            width: 80%; 
+            margin: 20px auto;             
+            font-family: Arial, sans-serif;
+            text-align: center; 
+        }
+        
+        .tabela_simples thead th {
+            background-color: #f4f4f4; 
+            border: 1px solid #333;            
+            padding: 10px; 
+            font-weight: bold; 
+        }
+        
+        .tabela_simples tbody td {
+            border: 1px solid #333; 
+            padding: 8px; 
+        }
+        
+
+        /* Tabela Zebrada */
+        .tabela_zebrada tbody tr:nth-child(even) {
+            background-color: #9accec; /* Linhas pares */
+        }
+
+        .tabela_zebrada tbody tr:nth-child(odd) {
+            background-color: #ffffff; /* Linhas ímpares */
+        }
+                
+        .tabela_zebrada tbody tr:hover {
+            background-color: #f0f8ff;
+            color:red;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Exemplo de uso das fontes</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#section1" class="nav-link"><i class="fas fa-info-circle icon"></i>Seção 1</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link"><i class="fas fa-book icon"></i>Seção 2</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link"><i class="fas fa-arrow-down icon"></i>Rodapé</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary">
+              <i class="fas fa-lightbulb icon"></i>
+              Seção 1: Tabela - formatação padrão
+            </h2>
+            
+            <table >
+                <!-- Head da Tabela -->   
+                <thead>
+                  <!-- Linha -->       
+                  <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <!-- Corpo da tabela --> 
+                <tbody>
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+        </section>
+
+        <section id="section2" class="mb-5">
+            <h2 class="text-primary">
+              <i class="fas fa-lightbulb icon"></i>
+              Seção 2: Tabela simples
+            </h2>
+
+            <table class="tabela_simples">
+                <!-- Head da Tabela -->   
+                <thead>
+                  <!-- Linha -->       
+                  <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <!-- Corpo da tabela --> 
+                <tbody>
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis B</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis C</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                </tbody>
+              </table> 
+
+        </section>
+
+        <section id="section3" class="mb-5">
+            <h2 class="text-primary">
+              <i class="fas fa-lightbulb icon"></i>
+              Seção 3: Tabela - Mesclagem de Células</h2>
+
+            <table class="tabela_simples">
+                <!-- Head da Tabela -->   
+                <thead>
+                  <!-- Linha -->       
+                  <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                
+                <!-- Corpo da tabela --> 
+                <tbody>
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  
+                  <!-- Coluna mesclada-->
+                  <tr>
+                    <td colspan="2">Promoção Relâmpago</td>
+                  </tr>
+
+                  <!-- Linha mesclada -->
+                  <tr>
+                    <td rowspan="2">Tênis B</td>
+                    <td>R$ 399,90</td>
+                  </tr>
+                  <tr>
+                    <td>Desconto: 10%</td>
+                  </tr>
+
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  
+                
+                </tbody>
+              </table>
+           
+        </section>
+
+        <section id="section4" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Seção 4: Tabela - Zebrada </h2>
+
+            <table class="tabela_simples  tabela_zebrada">
+                <!-- Head da Tabela -->   
+                <thead>
+                  <!-- Linha -->       
+                  <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+
+                <!-- Corpo da tabela --> 
+                <tbody>
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis B</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis C</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <!-- Linha -->     
+                  <tr>        
+                    <td>Tênis A</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis B</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                  <tr>        
+                    <td>Tênis C</td>
+                    <td>R$ 299,90</td>
+                  </tr>
+                </tbody>
+            </table>
+           
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted"><i class="far fa-copyright icon"></i> 2025/09 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

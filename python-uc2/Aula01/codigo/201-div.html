@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Codificação de caracteres -->
+    <meta charset="UTF-8">
+    
+    <!-- Configuração para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página (aparece na aba do navegador) -->
+    <title>Exemplo de Estrutura HTML5</title>
+    
+    <!-- Descrição para mecanismos de busca -->
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    
+    <!-- Autor do documento -->
+    <meta name="author" content="Luis Rodrigo - Papagaio">
+</head>
+<body>
+
+    <!-- define o cabeçalho de um documento ou seção -->
+    <header>
+        <h1> Curso de Python - UC2 </h1>
+        <p>  Aula 01 - Uso do elemento div </p>
+        <hr>        
+    </header>
+
+    <!--  conteúdo principal da página -->
+    <main>
+        <p> O elemento div é um container genérico usado quando 
+            não há um elemento semântico mais apropriado</p>
+             
+        <!-- ✅ Uso correto: agrupamento para estilização -->
+        <hr>  
+        <div class="container">
+            <header>
+                <p>Cabeçalho da div - container</p>                
+            </header>
+            
+            <main>
+                Corpo da div - container
+                <p>✅ Uso correto: agrupamento para estilização</p>
+            </main>
+        </div>
+
+        <hr> 
+        <!-- ✅ Uso correto: wrapper para layout -->
+        <div class="card">
+            <h3>Título do Card</h3>
+            <p>Conteúdo do card</p>
+            <p>✅ Uso correto: wrapper para layout</p>
+        </div>
+
+        <hr>
+        <!-- ❌ Uso incorreto: existe elemento semântico apropriado -->
+        <div class="navigation">  <!-- Deveria ser <nav> -->
+            <ul>
+                <li>❌ Uso incorreto: existe elemento semântico apropriado </li>
+                <li>Deveria ser nav </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 LRodrigo. Todos os direitos reservados.</p>
+        <p>Contato: luis.rodrigo.net@gmail.com</p>
+    </footer>
+
+</body>
+</html>

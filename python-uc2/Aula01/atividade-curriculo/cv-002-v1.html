@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Aluno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #0073b1;
+            border-bottom: 2px solid #0073b1;
+            padding-bottom: 5px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #eee;
+        }
+
+        .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #e3f0ff;
+            color: #0073b1;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/foto.jpg" alt="Foto do Aluno" class="profile-photo">
+        <h1>Nome Completo do Aluno</h1>
+        <p>Estudante de [Curso] na [Nome da Instituição]</p>
+        <p>📍 Localização | ✉️ email@example.com | 📱 (00) 00000-0000</p>
+    </header>
+
+    <section class="section">
+        <h2>Sobre</h2>
+        <p>Breve descrição sobre objetivos acadêmicos e profissionais, áreas de interesse e principais competências.</p>
+    </section>
+
+    <section class="section">
+        <h2>Experiência</h2>
+        <div class="experience-item">
+            <h3>Cargo/Posição</h3>
+            <p class="date">Mês/Ano - Atual</p>
+            <p>Nome da Empresa/Organização</p>
+            <ul>
+                <li>Descrição das atividades realizadas</li>
+                <li>Principais conquistas ou responsabilidades</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Formação Acadêmica</h2>
+        <div class="education-item">
+            <h3>Nome do Curso</h3>
+            <p class="date">Mês/Ano - Mês/Ano</p>
+            <p>Nome da Instituição de Ensino</p>
+            <p>Principais disciplinas ou atividades relevantes</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Habilidades</h2>
+        <div class="skills">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Comunicação</span>
+            <span class="skill-tag">Trabalho em Equipe</span>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Português - Nativo</li>
+            <li>Inglês - Intermediário</li>
+            <li>Espanhol - Básico</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Links</h2>
+        <p>
+            🔗 <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+        </p>
+    </section>
+</body>
+</html>

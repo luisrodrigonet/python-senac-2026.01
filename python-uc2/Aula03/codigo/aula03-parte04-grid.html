@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+
+        /* Links */
+
+        .link_basico {
+          color: #2E86C1;          
+          text-decoration: none;
+          font-weight: bold;
+        }
+
+        a.link_pseuso_classes:link {
+          color: #2E86C1;
+          text-decoration: none;
+        }
+
+        a.link_pseuso_classes:visited {
+          color: #7D3C98;
+        }
+
+        a.link_pseuso_classes:hover {
+          color: #E74C3C;
+          text-decoration: underline;
+        }
+
+        a.link_pseuso_classes:active {
+          color: #F1C40F;
+        }
+
+        a.link_pseuso_classes:focus {
+          outline: 2px solid #db8534;
+        }
+
+        a.botao {
+          display: inline-block;
+          padding: 10px 20px;
+          margin: 1.5em;
+          background-color: #3498DB;
+          color: white !important;
+          border-radius: 5px;          
+          text-decoration: none;
+        }
+
+        a.botao:hover {
+          background-color: #2980B9;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Container Responsivo -->
+<div class="container-lg">
+
+    <!-- Cabeçalho -->
+    <header class="row py-3 align-items-center gx-5">
+
+        <div class="col-12 col-md-4 order-md-2 text-center">
+            <h2 class="mb-0">Logo Central</h2>
+        </div>
+
+        <div class="col-6 col-md-4 order-md-1">
+            <nav class="d-flex justify-content-start gap-3">
+                <a href="#">Menu Esq</a>
+            </nav>
+        </div>
+        
+        <div class="col-6 col-md-4 order-md-3">
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Hero Section com Vertical Alignment -->
+        <section class="row min-vh-50 bg-light align-items-center justify-content-center gy-4">
+            
+            <div class="col-12 col-lg-8 text-center">
+                <h1 class="display-4">Layout Complexo</h1>
+                <p class="lead">Demonstração de recursos avançados</p>
+            </div>
+            
+            <div class="col-12 col-lg-4 order-lg-first">
+                <div class="box">
+                    <h3>Conteúdo Lateral</h3>
+                    <p>Exemplo de order</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Grid Complexo com Multiple Breakpoints -->
+        <section class="row g-4">
+
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="box h-100">
+                    <h4>Card 1</h4>
+                    <p>Responsivo: 12/6/3 colunas</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="box h-100">
+                    <h4>Card 2</h4>
+                    <p>Responsivo: 12/6/3 colunas</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="box h-100">
+                    <h4>Card 3</h4>
+                    <p>Responsivo: 12/6/3 colunas</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-xl-3">
+                <div class="box h-100">
+                    <h4>Card 4</h4>
+                    <p>Responsivo: 12/6/3 colunas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção com Column Wrapping -->
+        <section class="row gx-5 gy-4 mt-5">
+            <div class="col-8">Main Content</div>
+
+            <div class="col-4">Sidebar</div>
+            
+            <div class="w-100"></div> <!-- Break -->
+            
+            <div class="col-6">Lower Section 1</div>
+            
+            <div class="col-6">Lower Section 2</div>
+        </section>
+
+    </main>
+
+    <!-- Footer com Alinhamento Vertical -->
+    <footer class="row py-4 mt-5 border-top align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0">
+            <p class="text-body-secondary">© 2025 Python UC2</p>
+        </div>
+
+        <div class="col-md-8">
+            <nav class="d-flex justify-content-md-end gap-4">
+                <a href="#">Políticas</a>
+                <a href="#">Termos</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</div>
+<!-- Container Responsivo -->
+
+</body>
+</html>

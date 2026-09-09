@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            
+            <h1 class="text-dark">
+                <i class="fas fa-home icon"></i>
+                Exemplo de uso das fontes
+            </h1>
+            
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link">
+                            <i class="fas fa-info-circle icon"></i>
+                            Seção 1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section2" class="nav-link">
+                            <i class="fas fa-book icon"></i>
+                            Seção 2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">
+                            <i class="fas fa-arrow-down icon"></i>
+                            Rodapé
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary">
+                <i class="fas fa-lightbulb icon"></i>
+                Seção 1: Font Awesome
+            </h2>
+
+            <article class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title text-warning">
+                        <i class="fas fa-pencil-alt icon"></i>
+                        Exemplos
+                    </h3>
+                    <ul>
+                        <li><i class="fas fa-info-circle icon"></i></li>
+                        <li><i class="fas fa-book icon"></i></li>
+                        <li><i class="fas fa-arrow-down icon"></i></li>
+                    </ul>
+                </div>
+            </article>            
+        </section>
+
+        <section id="section2" class="mb-5">
+            <h2 class="text-primary">
+                <i class="fas fa-lightbulb icon"></i>
+                Seção 2: bootstrap Icons
+            </h2>
+
+            <article class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title text-warning">
+                        <i class="fas fa-pencil-alt icon"></i>
+                        Exemplos
+                    </h3>
+                    <ul>
+                        <li><i class="bi bi-alarm"></i></li>
+                        <li><i class="bi bi-archive"></i></li>
+                        <li><i class="bi bi-award-fill"></i></li>
+                    </ul>
+                </div>
+            </article>            
+        </section>
+
+        
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted">
+            <i class="far fa-copyright icon"></i> 
+            2023 - Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

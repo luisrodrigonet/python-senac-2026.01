@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+
+        /* Audio */
+        audio.estilizado {
+            width: 80%;
+            margin: 15px auto;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 10px;
+            /*box-shadow: 0 2px 8px rgba(0,0,0,0.1);*/
+        }
+
+        audio.estilizado:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="mt-4 p-5 bg-secondary-subtle text-secondary-emphasis rounded d-flex justify-content-between align-items-center">
+            <h1>Aula 03 - Parte 01 - Multimidia</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#section1" class="nav-link"><i class="fas fa-info-circle icon"></i>Seção 1</a></li>
+                    <li class="nav-item"><a href="#section2" class="nav-link"><i class="fas fa-book icon"></i>Seção 2</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link"><i class="fas fa-arrow-down icon"></i>Rodapé</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <audio class="estilizado" controls>
+            <source src="https://cdn.pixabay.com/download/audio/2024/10/22/audio_5b87be5f9b.mp3?filename=smooth-jazz-saxophone-solo-with-a-lofi-vibe-253950.mp3" type="audio/mpeg">
+            <source src="https://cdn.pixabay.com/download/audio/2024/09/27/audio_98ad32a7df.mp3?filename=acoustic-music-245091.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio HTML5.
+          </audio>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center p-4 rounded">
+        <p class="text-muted"><i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

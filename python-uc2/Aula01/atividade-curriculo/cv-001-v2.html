@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo de Aluno - Modelo inspirado no LinkedIn">
+    <title>Currículo de Aluno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0077b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
+            border-bottom: 2px solid #0077b5;
+            padding-bottom: 5px;
+            color: #0077b5;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #0077b5;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .contact-info a {
+            color: #0077b5;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #e1e1e1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/foto.jpg" alt="Foto de Perfil" class="profile-pic">
+        <h1>Nome do Aluno</h1>
+        <p>Estudante de [Curso]</p>
+        <div class="contact-info">
+            <a href="mailto:email@example.com">email@example.com</a>
+            <a href="tel:+123456789">+123 456 789</a>
+            <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>
+                Estudante dedicado e apaixonado por [área de interesse]. Atualmente cursando [curso] na [instituição]. 
+                Possuo habilidades em [habilidades relevantes] e estou sempre buscando aprender e crescer profissionalmente.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>
+                    <strong>Estágio em Desenvolvimento Web</strong> - Empresa XYZ<br>
+                    <small>Jan 2023 - Presente</small><br>
+                    <p>Desenvolvimento de interfaces responsivas e implementação de funcionalidades em projetos web.</p>
+                </li>
+                <li>
+                    <strong>Auxiliar Administrativo</strong> - Empresa ABC<br>
+                    <small>Jun 2022 - Dez 2022</small><br>
+                    <p>Responsável por organizar documentos e realizar atendimento ao cliente.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Educação</h2>
+            <ul>
+                <li>
+                    <strong>[Instituição de Ensino]</strong><br>
+                    <small>[Curso] - [Ano de Conclusão]</small>
+                </li>
+                <li>
+                    <strong>[Outra Instituição]</strong><br>
+                    <small>[Curso] - [Ano de Conclusão]</small>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <div class="skill-item">HTML5</div>
+                <div class="skill-item">CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Comunicação</div>
+                <div class="skill-item">Trabalho em Equipe</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

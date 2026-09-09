@@ -1,0 +1,143 @@
+/*-- HEADER 
+header {
+    background-color: #172134;
+    padding: 60px 0 35px 0;
+  }
+--*/
+
+/*-- FOOTER 
+footer {
+    background-color: #172134;
+    padding: 60px 0 35px 0;
+  }
+--*/
+
+/* Adicione esta regra no <head> ou em um arquivo CSS externo */
+footer .nav-link {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    line-height: 1.2; 
+}
+
+.icone {
+    margin-right: 10px;
+}
+
+
+/*--- Accordion --*/
+/* Estilo para o cabeçalho do accordion */
+.accordion-button {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Texto branco */
+  border: none; /* Remover borda */
+  }
+
+  /* Quando o accordion está aberto */
+  .accordion-button:not(.collapsed) {
+  background-color: #0056b3; /* Cor mais escura quando expandido */
+  color: white;
+  }
+
+  /* Cor do ícone de seta quando o accordion está aberto */
+  .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+  
+  /* Remover bordas padrão */
+  .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  }
+
+  /* Adicionar sombra ao accordion */
+  .accordion-item {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  }
+
+  /* Ajustar espaçamento interno */
+  .accordion-header {
+  padding: 10px;
+  }
+
+  .accordion-body {
+  padding: 15px;
+  }
+
+
+/* Estrelas de Avaliação */
+.star-rating {
+  font-size: 2rem; /* Ajusta o tamanho das estrelas */
+  color: lightgray; /* Cor padrão das estrelas vazias */
+  transition: color 0.3s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+.star-filled {
+    color: gold; /* Cor das estrelas preenchidas */
+}
+.star-rating:hover {
+    color: orange; /* Altera a cor ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar interação */
+}
+
+
+/* Preços */
+.discounted-price {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Botões */
+.button-group_1 {
+  display: flex; /* Garante que os botões fiquem na mesma linha */
+  gap: 10px; /* Adiciona espaço entre os botões */
+}
+
+.button-group_1 button {
+  flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
+}
+
+
+/* Imagem com Destaque e Sombra */
+.product-image-container {
+  position: relative; /* Permite posicionar as etiquetas dentro do contêiner */
+  display: inline-block;
+}
+
+.product-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Borda arredondada para suavizar as bordas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra à imagem [[9]] */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efeito de transição suave */
+}
+
+.product-image-container img:hover {
+  transform: scale(1.05); /* Amplia a imagem levemente ao passar o mouse */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada ao passar o mouse */
+}
+
+/* Etiquetas */
+.label {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.label-top {
+  top: 10px; /* Posiciona no topo */
+  left: 10px; /* Alinha à esquerda */
+}
+.label-bottom {
+  bottom: 10px; /* Posiciona na base */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Centraliza perfeitamente */
+}
