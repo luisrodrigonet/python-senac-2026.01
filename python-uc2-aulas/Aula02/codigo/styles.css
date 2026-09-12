@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color:cadetblue;
+}
+
+h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+main {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: chocolate;  
+    padding-left: 10px;  
+}
+
+footer {
+    margin-top: 30px;
+    border-top: dashed 3px black;
+    text-align: right;
+}
