@@ -1,7 +1,7 @@
+/**
 body {
-    font-family: sans-serif;
-    font-size: 12px;
-    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 header {
@@ -9,15 +9,12 @@ header {
     border-bottom-width: 3px;
     border-bottom-color:cadetblue;
 
-    border-left-style: dotted;
-    border-left-width: 5px;
-    border-left-color:brown;
+
 }
 
 h1 {
     color: blue;
-    /*font-family: Arial, Helvetica, sans-serif;*/
-    font-family: "Sofia", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
 }
 
@@ -33,3 +30,5 @@ footer {
     border-top: dashed 3px black;
     text-align: right;
 }
+
+**/
