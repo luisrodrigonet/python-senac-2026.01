@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        } 
+
+    </style>
+
+    <!--
+    <link rel="stylesheet" href="css/estilo-form.css">
+    -->
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Formulários - Parte 2</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+    <form action="" method="post">
+
+      <!-- 1a Linha -->
+      <div class="row mb-4">
+
+        <!-- SELECT - Estado -->
+        <div class="col-12">
+            <label for="estados" class="form-label">Selecione um estado:</label>
+            <select id="estados" class="form-select" aria-label="Selecione um estado">
+              <option selected disabled>Escolha um estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+        </div>
+
+      </div>
+      <!-- 1a Linha -->
+
+      <!-- 2a Linha -->
+      <div class="row mb-4">
+
+        <!-- Radio - Gênero  -->
+        <div class="col-12">
+            <label class="form-label">Selecione seu gênero:</label>
+
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino" checked>
+            <label class="form-check-label" for="masculino">
+                Masculino
+            </label>
+            </div>
+
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="feminino" value="feminino">
+            <label class="form-check-label" for="feminino">
+                Feminino
+            </label>
+            </div>
+
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="naobinario" value="naobinario">
+            <label class="form-check-label" for="naobinario">
+                Não binário
+            </label>
+            </div>
+
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="prefironaoinformar" value="prefironaoinformar">
+            <label class="form-check-label" for="prefironaoinformar">
+                Prefiro não informar
+            </label>
+            </div>
+
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="outro" value="outro">
+            <label class="form-check-label" for="outro">
+                Outro
+            </label>
+            </div>
+        </div>
+
+      </div>
+      <!-- 2a Linha -->
+
+      <!-- 3a Linha -->
+      <div class="row mb-4">
+        <!-- checkbox - Interesses  -->
+        <div class="col-12">
+
+            <label class="form-label">Selecione seus interesses:</label>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="esportes" id="esportes">
+              <label class="form-check-label" for="esportes">
+                Esportes
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="musica" id="musica">
+              <label class="form-check-label" for="musica">
+                Música
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="tecnologia" id="tecnologia">
+              <label class="form-check-label" for="tecnologia">
+                Tecnologia
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="cinema" id="cinema">
+              <label class="form-check-label" for="cinema">
+                Cinema
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="livros" id="livros">
+              <label class="form-check-label" for="livros">
+                Livros
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="viagens" id="viagens">
+              <label class="form-check-label" for="viagens">
+                Viagens
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="gastronomia" id="gastronomia">
+              <label class="form-check-label" for="gastronomia">
+                Gastronomia
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="jogos" id="jogos">
+              <label class="form-check-label" for="jogos">
+                Jogos
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="moda" id="moda">
+              <label class="form-check-label" for="moda">
+                Moda
+              </label>
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="arte" id="arte">
+              <label class="form-check-label" for="arte">
+                Arte
+              </label>
+            </div>
+
+        </div>
+      </div>
+      <!-- 3a Linha -->
+
+      <!-- 4a Linha -->
+      <div class="row mb-4">
+        <!-- color  -->
+        <div class="col-12">
+            <label for="corPerfil" class="form-label">Escolha a cor do seu perfil:</label>
+            <input type="color" class="form-control form-control-color" id="corPerfil" value="#0d6efd" title="Escolha uma cor">            
+        </div>
+
+      </div>
+      <!-- 4a Linha -->
+
+
+      <!-- 5a Linha -->
+      <div class="row mb-4">
+
+        <!-- file  -->
+        <div class="col-12">
+            <h4>Foto de Perfil</h4>
+
+            <!-- Campo de upload -->
+            <input type="file" class="form-control" id="fotoPerfil" accept="image/*">
+        
+
+            <!-- Informações adicionais -->
+            <p class="text-muted mt-2">Formatos aceitos: JPG, PNG, GIF. Tamanho máximo: 5MB.</p>         
+        </div>
+
+      </div>
+      <!-- 5a Linha -->
+
+      <!-- 6a Linha -->
+      <div class="row mb-4">
+        <!-- textarea  -->
+        <div class="container mt-5">
+            <label for="descricaoPerfil" class="form-label">Sobre você (breve descrição):</label>
+            <textarea 
+              class="form-control" 
+              id="descricaoPerfil" 
+              rows="4" 
+              maxlength="160" 
+              placeholder="Fale um pouco sobre você... Ex: Entusiasta de tecnologia, apaixonado por música e viagens."></textarea>
+            
+            <div class="form-text text-end mt-1" id="contadorCaracteres">0/160</div>
+          </div>
+      </div>
+      <!-- 6a Linha -->
+
+    </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted pb-3">
+            <i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        } 
+
+    </style>
+
+    <!--
+    <link rel="stylesheet" href="css/estilo-form.css">
+    -->
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Formulários - Parte 2</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+    <form action="" method="post">
+
+      <!-- 1a Linha -->
+      <div class="row mb-4">
+
+        <!-- SELECT - Estado -->
+        <div class="col-12">
+          <label for="estado">Estado:</label>
+          <select id="estado" name="estado" class="w-100" required>
+            <option value="">Selecione...</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+          </select>
+        </div>
+
+      </div>
+      <!-- 1a Linha -->
+
+      <!-- 2a Linha -->
+      <div class="row">
+
+        <!-- Radio - Gênero  -->
+        <div class="col-12">
+          <label>Gênero:</label>
+          <input type="radio" id="masculino" name="genero" value="M" checked>
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" id="feminino" name="genero" value="F">
+          <label for="feminino">Feminino</label>
+        </div>
+
+      </div>
+      <!-- 2a Linha -->
+
+      <!-- 3a Linha -->
+      <div class="row">
+
+        <!-- checkbox - Interesses  -->
+        <div class="col-12">
+
+          <label>Interesses:</label>
+
+          <input type="checkbox" id="esportes" name="interesses" value="esportes">
+          <label for="esportes">Esportes</label>
+
+          <input type="checkbox" id="musica" name="interesses" value="musica">
+          <label for="musica">Música</label>
+        </div>
+
+      </div>
+      <!-- 3a Linha -->
+
+      <!-- 4a Linha -->
+      <div class="row">
+
+        <!-- color  -->
+        <div class="col-12">
+          <label for="cor-favorita">Cor favorita:</label>
+          <input type="color" id="cor-favorita" name="cor_favorita" value="#ff0000">
+        </div>
+
+      </div>
+      <!-- 4a Linha -->
+
+
+      <!-- 5a Linha -->
+      <div class="row">
+
+        <!-- file  -->
+        <div class="col-12">
+          <label for="foto">Envie sua foto:</label>
+          <input type="file" id="foto" name="foto" accept="image/*" required>
+        </div>
+
+      </div>
+      <!-- 5a Linha -->
+
+      <!-- 6a Linha -->
+      <div class="row">
+
+        <!-- textarea  -->
+        <div class="col-12">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" cols="50" 
+              placeholder="Digite sua mensagem aqui..."></textarea>
+        </div>
+
+      </div>
+      <!-- 6a Linha -->
+
+    </form>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted pb-3">
+            <i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

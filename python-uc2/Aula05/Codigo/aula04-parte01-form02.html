@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        } 
+
+    </style>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="text-dark"><i class="fas fa-home icon"></i>Formulários</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+
+        <section id="section1" class="mb-5">
+            <h2 class="text-primary"><i class="fas fa-lightbulb icon"></i>Formulario de contato</h2>
+            <hr> 
+            <form action="/enviar-contato" method="POST">
+
+                <!-- Campo Nome (Obrigatório) -->
+                <label for="nome">Nome*:</label>
+                <input 
+                  type="text" 
+                  id="nome" 
+                  name="nome" 
+                  required 
+                  placeholder="Digite seu nome completo"
+                >
+            
+                <!-- Campo E-mail (Validação HTML5) -->
+                <label for="email">E-mail*:</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  placeholder="exemplo@email.com"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Digite um e-mail válido (exemplo: usuario@dominio.com)"
+                >
+            
+                <!-- Campo Telefone (Validação com Regex) -->
+                <label for="telefone">Telefone*:</label>
+                <input 
+                  type="tel" 
+                  id="telefone" 
+                  name="telefone" 
+                  required 
+                  placeholder="(XX) XXXXX-XXXX"
+                  pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}"
+                  title="Formato: (XX) XXXXX-XXXX"
+                >
+            
+                <!-- Campo Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea 
+                  id="mensagem" 
+                  name="mensagem" 
+                  rows="5" 
+                  placeholder="Digite sua mensagem..."
+                ></textarea>
+            
+                <!-- Botões -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+              </form>
+        </section>
+
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted"><i class="far fa-copyright icon"></i> 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

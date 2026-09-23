@@ -1,0 +1,38 @@
+body { 
+    font-family: Arial, sans-serif; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+form { 
+    display: grid; 
+    gap: 15px; 
+}
+
+fieldset { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 5px; 
+}
+
+legend { 
+    font-weight: bold; 
+}
+
+.form-group { 
+    display: grid; 
+    gap: 5px; }
+
+button { 
+    padding: 10px 15px; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover { 
+    background: #0056b3; 
+}
