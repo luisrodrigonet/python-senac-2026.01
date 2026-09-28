@@ -31,7 +31,7 @@
 <!-- Final do Head-->
 
 <!-- Inicio do Body -->
-<body>
+<body class="bg-secondary">
 <!-- 
     DIV - Prinicipal
     Area principal do site contem o 
@@ -39,7 +39,7 @@
         - Main 
         - Footer
  -->
-<div id="div_principal" class="container adicionar_borda">
+<div id="div_principal" class="container adicionar_borda bg-light">
     <!--
         Header da pagina 
         [-] Logotipo 
@@ -48,6 +48,21 @@
         [-] Login / Logout / Criar conta
     -->
     <header class="adicionar_borda">
+        <div class="row">
+            <div class="col-12">
+                Logo / Titulo
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                Menu principal
+            </div>
+            <div class="col-3">
+                Login/Logout |
+                Cadastrar 
+            </div>
+        </div>
         
     </header>
 
@@ -66,7 +81,27 @@
         [-] Redes Sociais
     -->
     <footer class="adicionar_borda">
+        <div class="row">
+            <div class="col-4">
+                Menu Secundário
+            </div>
 
+            <div class="col-5">
+                Contato <br>
+                Copyright
+            </div>
+
+            <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+            <div class="col-3">
+                <a href="https://github.com/luisrodrigonet/" 
+                   target="_blank" title="Acesse nosso GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </div> 
 <!-- Final da Div Principal-->   
