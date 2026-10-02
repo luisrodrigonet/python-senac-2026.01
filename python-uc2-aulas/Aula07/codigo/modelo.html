@@ -31,161 +31,160 @@
 <!-- Final do Head-->
 
 <!-- Inicio do Body -->
-<body class="bg-secondary">
+<body class="bg-light">
+
+
+<!--
+    Header da pagina 
+    [-] Logotipo 
+    [-] Titulo
+    [-] Menu Principal
+    [-] Login / Logout / Criar conta
+-->
+<header class="">
+    <!-- Navbar - Inicio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fa-brands fa-rebel"></i>
+        </a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" 
+                        href="index.html">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" 
+                        href="produtos.html">
+                        Loja
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" 
+                        href="blog.html">
+                        Blog
+                    </a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex">
+
+                <a href="auth/login"
+                    class="btn btn-sm btn-success me-1">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login 
+                </a>
+                <a href="auth/logout"
+                    class="btn btn-sm btn-warning me-1">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout 
+                </a>
+                <a href="cadastro-bs.html"
+                    class="btn btn-sm btn-primary me-1"
+                    title="Realizar o cadastro">
+                <i class="fa-solid fa-user-plus"></i>                    
+                </a>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- Navbar - Final -->
+    
+</header>
+
 <!-- 
-    DIV - Prinicipal
-    Area principal do site contem o 
-        - Header
-        - Main 
-        - Footer
- -->
-<div id="div_principal" class="container adicionar_borda bg-light">
-    <!--
-        Header da pagina 
-        [-] Logotipo 
-        [-] Titulo
-        [-] Menu Principal
-        [-] Login / Logout / Criar conta
-    -->
-    <header class="adicionar_borda">
-        <div class="row">
-            <div class="col-12">
-                Logo / Titulo
-            </div>
+    Main da pagina 
+-->
+<main class="bg-light">
+    <div class="row">
+
+        <div class="col-3">
+            Primeira coluna
         </div>
 
-        <!-- Navbar - Inicio -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <i class="fa-brands fa-rebel"></i>
-            </a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" 
-                            href="index.html">
-                            Home
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                            href="produtos.html">
-                            Loja
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                            href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-
-                </ul>
-
-                <form class="d-flex">
-
-                    <a href="auth/login"
-                        class="btn btn-sm btn-success me-1">
-                        <i class="fa-solid fa-right-to-bracket"></i> Login 
-                    </a>
-                    <a href="auth/logout"
-                        class="btn btn-sm btn-warning me-1">
-                        <i class="fa-solid fa-right-from-bracket"></i>
-                        Logout 
-                    </a>
-                    <a href="cadastro-bs.html"
-                        class="btn btn-sm btn-primary me-1"
-                        title="Realizar o cadastro">
-                    <i class="fa-solid fa-user-plus"></i>                    
-                    </a>
-                </form>
-            </div>
+        <div class="col-9">
+            Segunda coluna
         </div>
-        </nav>
-        <!-- Navbar - Final -->
         
-    </header>
+    </div>
+</main>
 
-    <!-- 
-        Main da pagina 
-    -->
-    <main class="adicionar_borda">
 
-    </main>
-
-    <!--
-        Footer da pagina 
-        [-] Menu Secundário
-        [-] Contato
-        [-] Copyright do site
-        [-] Redes Sociais
-    -->
-    <footer class="adicionar_borda">
-        <div class="row m-3">
-            <div class="col-4">
-                Menu Secundário
-            </div>
-
-            <div class="col-5">
-                Contato <br>
-                Copyright
-            </div>
-
-            <!--
-                Redes Sociais - Github, Youtube, Instagran, 
-                                Linkedin, Facebook                
-            -->
-            <div class="col-3 text-end">
-                <a href="https://github.com/luisrodrigonet/" 
-                   target="_blank" title="Acesse nosso GitHub"
-                   class="btn btn-sm btn btn-outline-dark">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://www.youtube.com/" 
-                   target="_blank" title="Acesse canal no Youtube"
-                   class="btn btn-sm btn btn-outline-dark">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a href="https://www.instagram.com/" 
-                   target="_blank" title="Acesse o nosso Instagram"
-                   class="btn btn-sm btn btn-outline-dark">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>
-
-                <a href="https://br.linkedin.com/" 
-                   target="_blank" title="Acesse o nosso Linkedin"
-                   class="btn btn-sm btn btn-outline-dark">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="https://www.facebook.com/" 
-                   target="_blank" title="Acesse o nosso Facebook"
-                   class="btn btn-sm btn btn-outline-dark">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-            </div>
+<!--
+    Footer da pagina 
+    [-] Menu Secundário
+    [-] Contato
+    [-] Copyright do site
+    [-] Redes Sociais
+-->
+<footer class="bg-dark">
+    <div class="row m-3">
+        
+        <div class="col-4">
+            Menu Secundário
         </div>
-    </footer>
-</div> 
-<!-- Final da Div Principal-->   
+
+        <div class="col-5">
+            Contato <br>
+            Copyright
+        </div>
+
+        <!--
+            Redes Sociais - Github, Youtube, Instagran, 
+                            Linkedin, Facebook                
+        -->
+        <div class="col-3 text-end">
+            <a href="https://github.com/luisrodrigonet/" 
+                target="_blank" title="Acesse nosso GitHub"
+                class="btn btn-sm btn btn-outline-dark">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" 
+                target="_blank" title="Acesse canal no Youtube"
+                class="btn btn-sm btn btn-outline-dark">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" 
+                target="_blank" title="Acesse o nosso Instagram"
+                class="btn btn-sm btn btn-outline-dark">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+
+            <a href="https://br.linkedin.com/" 
+                target="_blank" title="Acesse o nosso Linkedin"
+                class="btn btn-sm btn btn-outline-dark">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" 
+                target="_blank" title="Acesse o nosso Facebook"
+                class="btn btn-sm btn btn-outline-dark">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
+    </div>
+</footer>
+
 
 <!-- Não apague a tag "SCRIPT" -->
 <!-- Bootstrap JS e dependências -->
