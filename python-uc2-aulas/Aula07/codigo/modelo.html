@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Inicio do Head-->
+<head>  
+    <title>[MUDAR]</title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="description" content="[MUDAR]">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .adicionar_borda {
+           border-width: 1px;
+           border-style: solid;
+           border-color: black;            
+        }
+    </style>
+
+</head>
+<!-- Final do Head-->
+
+<!-- Inicio do Body -->
+<body class="bg-secondary">
+<!-- 
+    DIV - Prinicipal
+    Area principal do site contem o 
+        - Header
+        - Main 
+        - Footer
+ -->
+<div id="div_principal" class="container adicionar_borda bg-light">
+    <!--
+        Header da pagina 
+        [-] Logotipo 
+        [-] Titulo
+        [-] Menu Principal
+        [-] Login / Logout / Criar conta
+    -->
+    <header class="adicionar_borda">
+        <div class="row">
+            <div class="col-12">
+                Logo / Titulo
+            </div>
+        </div>
+
+        <!-- Navbar - Inicio -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-rebel"></i>
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" 
+                            href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                            href="produtos.html">
+                            Loja
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" 
+                            href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex">
+
+                    <a href="auth/login"
+                        class="btn btn-sm btn-success me-1">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login 
+                    </a>
+                    <a href="auth/logout"
+                        class="btn btn-sm btn-warning me-1">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout 
+                    </a>
+                    <a href="cadastro-bs.html"
+                        class="btn btn-sm btn-primary me-1"
+                        title="Realizar o cadastro">
+                    <i class="fa-solid fa-user-plus"></i>                    
+                    </a>
+                </form>
+            </div>
+        </div>
+        </nav>
+        <!-- Navbar - Final -->
+        
+    </header>
+
+    <!-- 
+        Main da pagina 
+    -->
+    <main class="adicionar_borda">
+
+    </main>
+
+    <!--
+        Footer da pagina 
+        [-] Menu Secundário
+        [-] Contato
+        [-] Copyright do site
+        [-] Redes Sociais
+    -->
+    <footer class="adicionar_borda">
+        <div class="row m-3">
+            <div class="col-4">
+                Menu Secundário
+            </div>
+
+            <div class="col-5">
+                Contato <br>
+                Copyright
+            </div>
+
+            <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+            <div class="col-3 text-end">
+                <a href="https://github.com/luisrodrigonet/" 
+                   target="_blank" title="Acesse nosso GitHub"
+                   class="btn btn-sm btn btn-outline-dark">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" 
+                   target="_blank" title="Acesse canal no Youtube"
+                   class="btn btn-sm btn btn-outline-dark">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" 
+                   target="_blank" title="Acesse o nosso Instagram"
+                   class="btn btn-sm btn btn-outline-dark">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+
+                <a href="https://br.linkedin.com/" 
+                   target="_blank" title="Acesse o nosso Linkedin"
+                   class="btn btn-sm btn btn-outline-dark">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" 
+                   target="_blank" title="Acesse o nosso Facebook"
+                   class="btn btn-sm btn btn-outline-dark">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+</div> 
+<!-- Final da Div Principal-->   
+
+<!-- Não apague a tag "SCRIPT" -->
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- Não apague a tag "SCRIPT" -->
+</body>
+<!-- Final do Body-->
+</html>
