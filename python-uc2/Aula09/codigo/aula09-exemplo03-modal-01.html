@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Conteúdo aqui -->
+
+    <!-- Botão para abrir o modal -->
+    <div class="container mt-5"> 
+        <button type="button" class="btn btn-primary" 
+                data-bs-toggle="modal" 
+                data-bs-target="#exemploModal">
+            Abrir Modal
+        </button>
+
+        <button type="button" class="btn btn-primary" 
+                data-bs-toggle="modal" 
+                data-bs-target="#exemploModalGrande">
+            Abrir Modal Grande
+        </button>
+
+        <button type="button" class="btn btn-primary" 
+                data-bs-toggle="modal" 
+                data-bs-target="#exemploModalFull">
+            Abrir Modal Full Screen
+        </button>
+
+        <button type="button" class="btn btn-primary" 
+                data-bs-toggle="modal" 
+                data-bs-target="#exemploModalCenter">
+            Abrir Modal Centralizado
+        </button>
+    </div>
+    
+    <!-- Estrutura do Modal -->
+    <div id="exemploModal" class="modal fade"  tabindex="-1" 
+            aria-labelledby="exemploModalLabel" aria-hidden="true">        
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Conteúdo do modal vai aqui...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal">
+                            Fechar
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Estrutura do Modal -->
+
+    <!-- Estrutura do Modal Grande -->
+    <div id="exemploModalGrande" class="modal fade"  tabindex="-1" 
+            aria-labelledby="exemploModalLabel" aria-hidden="true">        
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Conteúdo do modal vai aqui...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal">
+                            Fechar
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Estrutura do Modal -->
+    
+
+    <!-- Estrutura do Modal Full Screen -->
+    <div id="exemploModalFull" class="modal fade"  tabindex="-1" 
+    aria-labelledby="exemploModalLabel" aria-hidden="true">        
+
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Conteúdo do modal vai aqui...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal">
+                            Fechar
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Estrutura do Modal -->
+
+    <!-- Estrutura do Modal Centralidado-->
+    <div id="exemploModalCenter" class="modal fade"  tabindex="-1" 
+    aria-labelledby="exemploModalLabel" aria-hidden="true">        
+    
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exemploModalLabel">Título do Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    Conteúdo do modal vai aqui...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" 
+                        data-bs-dismiss="modal">
+                            Fechar
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Estrutura do Modal -->
+
+    <!-- Conteúdo aqui -->
+
+  
+  <!-- Bootstrap JS (opcional para componentes interativos) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

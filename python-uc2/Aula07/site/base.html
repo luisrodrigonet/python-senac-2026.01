@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagagio's - Tênis e calçados</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  
+    <style>
+        body {
+            padding-top: 70px;      /* Espaço para o navbar superior */
+            padding-bottom: 60px;   /* Espaço para o navbar inferior */
+            min-height: 100vh;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .company-logo {
+            height: 40px;
+            margin-right: 15px;
+        }
+    </style>
+
+
+    <!-- -->
+    <link rel="stylesheet" href="css/estilo-site.css">
+    
+    
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+    <!-- Navbar Fixo no Topo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+            <!-- Botão toggler para mobile -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Logo da empresa + Menu (lado esquerdo) -->
+            <div class="logo-menu-container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://placehold.co/150x40?text=Logo+Empresa" alt="Logo da Empresa" class="company-logo">
+                </a>
+                
+                <!-- Menu ao lado do logo (visível em desktop) -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="produtosDropdown" role="button" data-bs-toggle="dropdown">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Listar Produtos</a></li>
+                                <li><a class="dropdown-item" href="#">Tabela de Preço</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Formulário de pesquisa (lado direito) -->
+            <form class="d-flex">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Pesquisar..." aria-label="Pesquisar">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="content container mt-4">
+        <h1>Bem-vindo à Papagaio's - Tenis e calçados</h1>
+        <p>Esta é a página inicial da nossa empresa. Navegue pelo menu para conhecer nossos produtos e serviços.</p>
+        
+        <section class="mt-5">
+            <h2>Destaques</h2>
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Produto em Destaque</h5>
+                            <p class="card-text">Descrição breve do produto em destaque.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Oferta Especial</h5>
+                            <p class="card-text">Descrição breve da oferta especial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://placehold.co/300x200" class="card-img-top" alt="Produto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Novidade</h5>
+                            <p class="card-text">Descrição breve do novo produto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+    <!-- Rodapé -->
+    <footer">
+
+        <!-- Navbar Fixo na Base -->
+        <nav class="navbar navbar-expand navbar-dark bg-dark fixed-bottom">
+            <div class="container-fluid">
+                <span class="navbar-text me-auto">
+                    &copy; 2025 Papagaio's - Tenis e calçados - Todos os direitos reservados
+                </span>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Termos de Uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Política de Privacidade</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

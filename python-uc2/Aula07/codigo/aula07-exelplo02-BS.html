@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-bootstrap"></i> Aula Bootstrap
+      </a>
+    </div>
+  </nav>
+
+  <!-- Container Principal -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4"><i class="bi bi-code-slash"></i> Componentes Básicos</h1>
+    
+    <!-- Grid de Cards -->
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-header bg-warning">
+            <i class="bi bi-exclamation-triangle"></i> Alerta
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Atenção</h5>
+            <p class="card-text">Este é um card de aviso importante.</p>
+            <a href="#" class="btn btn-warning">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card com Imagem</h5>
+            <p class="card-text">Exemplo de card com imagem no topo.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card h-100 border-success">
+          <div class="card-body">
+            <h5 class="card-title text-success">
+              <i class="bi bi-check2-circle"></i> Sucesso
+            </h5>
+            <p class="card-text">Operação concluída com êxito.</p>
+            <button class="btn btn-outline-success">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    <p class="mb-0">Feito com <i class="bi bi-heart-fill text-danger"></i> e Bootstrap</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
