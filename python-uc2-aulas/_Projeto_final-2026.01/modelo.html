@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Inicio do Head-->
+<head>  
+    <title>[MUDAR]</title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="author" content="Luis Rodrigo (dot) Net">
+    <meta name="description" content="[MUDAR]">
+
+
+    <!-- Favicons --> 
+    <!-- https://realfavicongenerator.net/?spm=a2ty_o01.29997173.0.0.1857c921qtoRb2 --> 
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .adicionar_borda {
+           border-width: 1px;
+           border-style: solid;
+           border-color: black;            
+        }
+
+    </style>
+
+</head>
+<!-- Final do Head-->
+
+<!-- Inicio do Body -->
+<body class="bg-light">
+
+<header class="bg-dark">
+
+    <!--
+    <div class="container">
+        <div class="col-12 text-light">
+            Logo / Titulo
+        </div>
+    </div>
+    -->
+
+    <!-- Navbar - Inicio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <!-- <i class="fa-brands fa-rebel"></i> -->
+            <img src="img/logo_lg_v4.png">
+        </a>
+
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="produtos-list.html">Produtos</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="promocoes.html">Promoções</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="blog.html">
+                        Blog
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Ícones (agora antes do formulário) -->
+            <div class="d-flex align-items-center me-3">
+
+                <a href="perfil.html" 
+                    class="text-white text-decoration-none me-2 mb-1 fs-4"><i class="fa-regular fa-circle-user"></i></a>
+
+                <a href="favoritos.html" 
+                    class="text-white text-decoration-none me-2 mb-1 fs-4"><i class="fa-regular fa-heart"></i></a>
+
+                <a href="carrinho.html" 
+                    class="text-white text-decoration-none me-5 mb-1 fs-4"><i class="fa-solid fa-bag-shopping"></i></a>
+                
+                <a href="auth/login"
+                    class="btn btn-sm btn-success me-1">
+                    <i class="fa-solid fa-right-to-bracket"></i> 
+                    Login 
+                </a>
+                
+                <a href="auth/logout"
+                    class="btn btn-sm btn-warning me-1">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout 
+                </a>
+                
+                <a href="cadastro-bs.html"
+                    class="btn btn-sm btn-primary me-1"
+                    title="Realizar o cadastro">
+                <i class="fa-solid fa-user-plus"></i>     
+                
+                
+
+                </a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Navbar - Final -->
+    
+</header>
+
+
+<!-- Main -->
+<main class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+
+                <p>Primeira Coluna</p>
+
+            </div>
+
+            <div class="col-md-10">
+
+                <p>Segunda Coluna</p> 
+
+            </div>
+
+        </div>
+    </div>
+</main>
+<!-- Main -->
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white">
+    <!-- Div Container -->
+    <div class="container py-4">
+        <!-- Div Linha -->
+        <div class="row">
+
+            <!-- Coluna - Links Rápidos -->
+            <div class="col-2  mb-3">
+                <p>Links Rápidos</p>
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                    <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                    <a class="nav-link text-white py-1" href="trabalhe_conosco-bs.html">Trabalhe conosco</a>
+                    <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                    <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                </nav>
+            </div>
+
+            <!-- Coluna - Contatos -->
+            <div class="col-3">
+                <p>Contatos :</p>
+
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white py-1" href="#"><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</a>
+                    <a class="nav-link text-white py-1" href="contato@ppgmaker.github.io">
+                        <i class="fa-solid fa-envelope"></i>
+                        contato@ppgmaker.github.io
+                    </a>
+                    <a class="nav-link text-white py-1" href="suporte.html">
+                        <i class="fa-solid fa-headset"></i>
+                        Suporte
+                    </a>                    
+                </nav>
+            </div>
+
+            <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+            <div class="col-7 text-end">
+                <p>Rede Social: </p>
+                <a href="https://github.com/luisrodrigonet/" 
+                   target="_blank" title="Acesse nosso GitHub"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" 
+                   target="_blank" title="Acesse canal no Youtube"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" 
+                   target="_blank" title="Acesse o nosso Instagram"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+
+                <a href="https://br.linkedin.com/" 
+                   target="_blank" title="Acesse o nosso Linkedin"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" 
+                   target="_blank" title="Acesse o nosso Facebook"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>         
+
+
+        </div>
+        <!-- Div Linha -->
+
+        <hr/>
+
+        <div class="row">
+            <!-- Coluna - Idioma -->
+            <div class="col-md-2 mb-3">
+                <select class="form-select form-select-sm text-white bg-dark border-secondary" aria-label="Default select idioma">
+                    <option class="bg-dark text-white" value="Portuges" selected>Português</option>
+                    <option class="bg-dark text-white" value="English">English</option>
+                    <option class="bg-dark text-white" value="French">French</option>
+                    <option class="bg-dark text-white" value="Spanish">Spanish</option>
+                    <option class="bg-dark text-white" value="Russian">Russian</option>
+                </select>
+            </div>
+            <!-- Coluna - Idioma -->
+
+
+            <!-- Coluna - Moeda -->
+            <div class="col-md-1  mb-3">                
+                <select class="form-select form-select-sm text-white bg-dark border-secondary" aria-label="Default select moeda">
+                    <option value="Real" selected>Real</option>
+                    <option value="US Dollars">US Dollars</option>
+                    <option value="Euro">Euro</option>
+                </select>    
+            </div>
+                <!-- Coluna - Moeda -->
+
+            <!-- Coluna - Links Rápidos -->
+            <div class="col-md-9  mb-3">
+                <p class="text-end text-black-50 mb-0">
+                    <a href="termos.html" class="text-white text-decoration-none">Termos e condições</a> |
+                    <a href="privacidade.html" class="text-white text-decoration-none">Privacidade</a> |
+                    <span class="text-white">© 2026 - Luis Rodrigo Net</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Div Container -->
+</footer>
+<!-- Footer -->
+
+<!-- Não apague a tag "SCRIPT" -->
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- Não apague a tag "SCRIPT" -->
+</body>
+<!-- Final do Body-->
+</html>

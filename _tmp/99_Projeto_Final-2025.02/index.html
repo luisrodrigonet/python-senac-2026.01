@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Loja de Tenis">
+    <meta name="author" content="LRodrigo - Papagaio">
+
+    <!-- Titulo do Site -->
+    <title>SENAC SHOES</title>
+
+    <!-- Favicons --> 
+    <!-- https://realfavicongenerator.net/?spm=a2ty_o01.29997173.0.0.1857c921qtoRb2 --> 
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+	<link rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        /** body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        **/
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- <div class="container-fluid d-flex flex-nowrap"> --> 
+            <div class="container d-flex flex-nowrap">
+                <!-- Logo -->
+                <a class="navbar-brand me-4" href="index.html">
+                    <img src="img/logo.png" alt="Logo" width="75" 
+                        class="d-inline-block align-text-top">
+                </a>
+            
+                <!-- Botão de toggle para mobile -->
+                <button class="navbar-toggler" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Conteúdo da navbar -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Menu de navegação -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" 
+                                href="produtos-list.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" 
+                                href="promocoes.html">Promoções</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" 
+                                href="sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+            
+                    <!-- Ícones (agora antes do formulário) -->
+                    <div class="d-flex align-items-center me-3 mb-2 mb-lg-0">
+                        <a href="cliente_cadastro.html" 
+                            class="text-white text-decoration-none mx-2 fs-4">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <a href="favoritos.html" 
+                            class="text-white text-decoration-none mx-2 fs-4">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <a href="carrinho.html" 
+                            class="text-white text-decoration-none mx-2 fs-4">
+                            <i class="bi bi-bag"></i>
+                        </a>
+                    </div>
+            
+                    <!-- Formulário de busca (agora à direita, depois dos ícones) -->
+                    <form class="d-flex mb-2 mb-lg-0" role="search">
+                        <div class="input-group">
+                            <input class="form-control" 
+                                type="search" 
+                                data-bs-toggle="quicksearch"
+                                placeholder="Qual o modelo que você procura?" 
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-light" type="submit">
+                            <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+    <main class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                    <p>Primeira Coluna</p>
+
+                </div>
+
+                <div class="col-md-10">
+
+                    <h1>Bem-vindo(a) ao seu novo ponto de encontro para tudo sobre tênis!</h1>
+                    <p>Se você é um apaixonado por tênis, de quem acompanha os Grand Slams a quem joga nos fins de semana, você está no lugar certo. Nosso site foi criado para ser a sua fonte completa e confiável no universo do tênis.</p>
+                    
+                    <div class="list-container">
+                        <ul>
+                            <li>
+                                <span class="icon">&#9917;</span> 
+                                <div>
+                                    <h2>Notícias e Análises</h2>
+                                    <p>Mantenha-se atualizado com as últimas notícias do circuito profissional. Oferecemos análises aprofundadas de partidas, perfis de jogadores e cobertura dos principais torneios.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon">&#9881;</span>
+                                <div>
+                                    <h2>Dicas e Treinamento</h2>
+                                    <p>Quer melhorar seu jogo? Compartilhamos dicas práticas, exercícios e orientações de técnicos experientes para aprimorar sua técnica, estratégia e preparo físico.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon">&#128099;</span>
+                                <div>
+                                    <h2>Equipamentos</h2>
+                                    <p>De raquetes a calçados, ajudamos você a escolher o equipamento ideal para o seu estilo de jogo. Nossos reviews são imparciais e detalhados.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cta-box">
+                        <p>Junte-se à nossa comunidade e não perca nada! Se inscreva na nossa newsletter para receber as novidades direto na sua caixa de entrada.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-auto">
+        <!-- Div Container -->
+        <div class="container py-4">
+            <!-- Div Linha -->
+            <div class="row">
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-2  mb-3">
+                    <p>Links Rápidos</p>
+                    <nav class="nav flex-column">
+                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                    </nav>
+                </div>
+
+                <!-- Coluna - Contatos -->
+                <div class="col-md-3">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+                    <p> 
+                        <a href="mailto:contato@tenis.github.io" 
+                            class="nav-link text-white">
+                            <i class="fa-solid fa-envelope"></i>
+                            contato@tenis.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" 
+                            class="nav-link text-white py-1">
+                            Acesse o suporte
+                        </a> 
+                    </p>
+                </div>
+                
+                <!-- Outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
+                </div>
+
+            </div>
+            <!-- Div Linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Portugues</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - Idioma -->
+
+
+                <!-- Coluna - Moeda -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">US Dollars</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - Moeda -->
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-white">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-white">Privacidade</a> |
+                        <span class="text-white">© 2025 SENAC - RJ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div Container -->
+    </footer>
+    <!-- Footer -->
+    
+	
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

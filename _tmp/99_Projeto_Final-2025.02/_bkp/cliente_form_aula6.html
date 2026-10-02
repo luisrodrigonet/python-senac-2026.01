@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Loja de Tenis">
+    <meta name="author" content="LRodrigo - Papagaio">
+
+    <!-- Titulo do Site -->
+    <title>SENAC SHOES</title>
+
+    <!-- Favicons --> 
+    <!-- https://realfavicongenerator.net/?spm=a2ty_o01.29997173.0.0.1857c921qtoRb2 --> 
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    
+    <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+	<link rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" >
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    </style>
+
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-dark text-white mt-auto">
+        <div class="container">
+            
+            <div class="row py-4">
+
+                <!-- Logo do Site -->
+                <div class="col-md-2">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="" width="150" height="75">
+                    </a>
+                </div>
+
+                <!-- Campo de Busca -->
+                <div class="col-md-8">
+                    <form class="d-flex pt-3" role="search">
+                        <div class="input-group">
+                            <input class="form-control me-2" 
+                                type="search" data-bs-toggle="quicksearch"
+                                placeholder="Qual o modelo que você procura?" 
+                                aria-label="Pesquisar">
+                                
+                            <button class="btn btn-outline-secondary" 
+                                type="submit">
+                                <i class="bi bi-search"></i> 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Icones do lado direito -->
+                <div class="col-md-2 text-end">
+                    <p class="fs-3 pt-3">
+                        <i class="bi bi-person-circle icone"></i>
+                        <i class="bi bi-heart icone"></i>
+                        <i class="bi bi-bag"></i>
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+
+                    <p>Primeira Coluna</p>
+
+                </div>
+
+                <div class="col-md-10">
+
+                    <!-- <form action="/cadastro" method="post" target="_blank"> --> 
+                    <!-- <form action="/cadastro" method="post"> --> 
+                    <form method="post">
+
+                        <!-- Nome do Cliente-->
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" 
+                            required placeholder="Seu nome completo">
+                        <br>
+
+                        <!-- Email do cliente -->
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" 
+                            required placeholder="exemplo@email.com">
+                        <br> 
+                    
+                        <!-- Telefone de contato -->
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" 
+                            pattern="[0-9]{11}" placeholder="24 988776655"
+                            title="DDD + Número (apenas dígitos)">
+                        <br> 
+                    
+                        <!-- Data de Nascimento -->
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                        <br> 
+
+
+                        <!-- Gênero (Radio Buttons) -->
+                        
+                        <label class="form-label">Gênero</label>
+                        <br>
+
+                        <input  type="radio" name="genero" 
+                            id="masculino" value="masculino">
+                        <label  for="masculino">Masculino</label>
+                        <br>
+                        
+                        <input  type="radio" name="genero" 
+                            id="feminino" value="feminino">
+                        <label  for="feminino">Feminino</label>
+                        <br>
+
+                        <input  type="radio" name="genero" 
+                            id="nb" value="nao_binario">
+                        <label  for="nb">Não Binário</label>
+                        <br>
+
+                        <input type="radio" name="genero" 
+                            id="outro" value="outro">
+                        <label for="outro">Outro</label>
+                        <br>
+
+                        <input type="radio" name="genero" 
+                            id="ni" value="nao_informado">
+                        <label for="ni">Prefiro não informar</label>
+                        <br>
+                        
+                        <!-- Senha -->
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" 
+                            required minlength="6">
+                        <br>
+
+                        <!-- Confirmacao da Senha -->
+                        <label for="senha">Confirmação da Senha:</label>
+                        <input type="password" id="senha_validacao" 
+                            name="senha_validacao" 
+                            required minlength="6">
+                        <br>
+
+                        <!-- Termos de Aceite -->                        
+                        <input type="checkbox" id="termos" required>
+                        <label for="termos">Aceito os termos de uso*</label>
+                        <br> 
+
+                        <input type="button" value="Salvar">
+                        <button type="submit" value="Enviar">Enviar</button>
+                        <button type="reset"  value="Limpar">Limpar</button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-auto">
+        <!-- Div Container -->
+        <div class="container py-4">
+            <!-- Div Linha -->
+            <div class="row">
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-2  mb-3">
+                    <p>Links Rápidos</p>
+                    <nav class="nav flex-column">
+                        <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                        <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                        <a class="nav-link text-white py-1" href="ajuda.html">Ajuda</a>
+                        <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                        <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                    </nav>
+                </div>
+
+                <!-- Coluna - Contatos -->
+                <div class="col-md-2">
+                    <p>Contatos</p>
+                    <p><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</p>
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:contato@tenis.github.io" class="text-white">
+                            contato@tenis.github.io
+                        </a>
+                    </p>
+                    <p>
+                        <a href="suporte.html" class="text-white">
+                            Acesse o suporte
+                        </a> 
+                    </p>
+                </div>
+                
+                <!-- Outras colunas do rodapé (opcional) -->
+                <div class="col-md-8">
+                    <p class="text-end mb-0"></p>
+                </div>
+
+            </div>
+            <!-- Div Linha -->
+
+            <hr/>
+
+            <div class="row">
+                <!-- Coluna - Idioma -->
+                <div class="col-md-2  mb-3">
+
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select idioma">
+                        <option value="Portuges" selected>Portugues</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Russian">Russian</option>
+                    </select>
+                
+                </div>
+                <!-- Coluna - Idioma -->
+
+
+                <!-- Coluna - Moeda -->
+                <div class="col-md-1  mb-3">                
+                    <select class="form-select form-select-sm text-white bg-dark" aria-label="Default select moeda">
+                        <option value="Real" selected>Real</option>
+                        <option value="US Dollars">US Dollars</option>
+                        <option value="Euro">Euro</option>
+                    </select>    
+                </div>
+                 <!-- Coluna - Moeda -->
+
+                <!-- Coluna - Links Rápidos -->
+                <div class="col-md-9  mb-3">
+                    <p class="text-end text-black-50 mb-0">
+                        <a href="termos.html" class="text-white">Termos e condições</a> |
+                        <a href="privacidade.html" class="text-white">Privacidade</a> |
+                        <span class="text-white">© 2025 SENAC - RJ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Div Container -->
+    </footer>
+    <!-- Footer -->
+    
+	
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
