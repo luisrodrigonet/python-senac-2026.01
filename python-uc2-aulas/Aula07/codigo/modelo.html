@@ -41,7 +41,7 @@
     [-] Menu Principal
     [-] Login / Logout / Criar conta
 -->
-<header class="">
+<header>
     <!-- Navbar - Inicio -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -113,16 +113,19 @@
     Main da pagina 
 -->
 <main class="bg-light">
-    <div class="row">
+    <div class="container">
 
-        <div class="col-3">
-            Primeira coluna
-        </div>
+        <div class="row">
 
-        <div class="col-9">
-            Segunda coluna
-        </div>
-        
+            <div class="col-3">
+                Primeira coluna
+            </div>
+
+            <div class="col-9">
+                Segunda coluna
+            </div>        
+        </div>    
+
     </div>
 </main>
 
@@ -134,54 +137,113 @@
     [-] Copyright do site
     [-] Redes Sociais
 -->
-<footer class="bg-dark">
-    <div class="row m-3">
-        
-        <div class="col-4">
-            Menu Secundário
+<footer class="bg-dark text-light">
+    <div class="container py-4">
+        <div class="row">
+
+            <!-- Coluna - Links Rápidos -->
+            <div class="col-2">
+                <p>Links Rápidos :</p>
+
+                <nav class="nav flex-column">
+
+                    <a class="nav-link text-white py-1" 
+                        href="sobre.html">
+                        Quem somos</a>
+
+                    <a class="nav-link text-white py-1" 
+                        href="contato.html">Fale conosco</a>
+
+                    <a class="nav-link text-white py-1" 
+                        href="trabalhe_conosco-bs.html">
+                            Trabalhe conosco</a>
+
+                    <a class="nav-link text-white py-1" 
+                        href="perfil.html">Meu Perfil</a>
+
+                    <a class="nav-link text-white py-1" 
+                        href="blog.html">Blog</a> 
+                        
+                </nav>
+
+            </div>
+
+            <!-- Coluna - Contatos -->
+            <div class="col-3">
+                <p>Contatos :</p>
+
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white py-1" href="#"><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</a>
+                    <a class="nav-link text-white py-1" href="contato@ppgmaker.github.io">
+                        <i class="fa-solid fa-envelope"></i>
+                        contato@ppgmaker.github.io
+                    </a>
+                    <a class="nav-link text-white py-1" href="suporte.html">
+                        <i class="fa-solid fa-headset"></i>
+                        Suporte
+                    </a>                    
+                </nav>   
+
+            </div>
+
+            <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+            <div class="col-7 text-end py-3">
+                <a href="https://github.com/luisrodrigonet/" 
+                    target="_blank" title="Acesse nosso GitHub"
+                    class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" 
+                    target="_blank" title="Acesse canal no Youtube"
+                    class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" 
+                    target="_blank" title="Acesse o nosso Instagram"
+                    class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+
+                <a href="https://br.linkedin.com/" 
+                    target="_blank" title="Acesse o nosso Linkedin"
+                    class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" 
+                    target="_blank" title="Acesse o nosso Facebook"
+                    class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+            </div>
         </div>
 
-        <div class="col-5">
-            Contato <br>
-            Copyright
-        </div>
+        <hr>
 
-        <!--
-            Redes Sociais - Github, Youtube, Instagran, 
-                            Linkedin, Facebook                
-        -->
-        <div class="col-3 text-end">
-            <a href="https://github.com/luisrodrigonet/" 
-                target="_blank" title="Acesse nosso GitHub"
-                class="btn btn-sm btn btn-outline-dark">
-                <i class="fa-brands fa-github"></i>
-            </a>
+        <div class="row">
+            <!-- Idioma -->
+            <div class="col-2">
 
-            <a href="https://www.youtube.com/" 
-                target="_blank" title="Acesse canal no Youtube"
-                class="btn btn-sm btn btn-outline-dark">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
+            </div>
 
-            <a href="https://www.instagram.com/" 
-                target="_blank" title="Acesse o nosso Instagram"
-                class="btn btn-sm btn btn-outline-dark">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
+            <!-- Moeda-->
+            <div class="col-1">
 
-            <a href="https://br.linkedin.com/" 
-                target="_blank" title="Acesse o nosso Linkedin"
-                class="btn btn-sm btn btn-outline-dark">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+            </div>
 
-            <a href="https://www.facebook.com/" 
-                target="_blank" title="Acesse o nosso Facebook"
-                class="btn btn-sm btn btn-outline-dark">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
+            <!-- Links Rápidos -->
+            <div class="col-9">
+
+            </div>
 
         </div>
+
     </div>
 </footer>
 
