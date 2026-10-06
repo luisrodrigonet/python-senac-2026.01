@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Inicio do Head-->
+<head>  
+    <title>[MUDAR]</title>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="author" content="Luis Rodrigo (dot) Net">
+    <meta name="description" content="[MUDAR]">
+
+
+    <!-- Favicons --> 
+    <!-- https://realfavicongenerator.net/?spm=a2ty_o01.29997173.0.0.1857c921qtoRb2 --> 
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .adicionar_borda {
+           border-width: 1px;
+           border-style: solid;
+           border-color: black;            
+        }
+
+    </style>
+
+</head>
+<!-- Final do Head-->
+
+<!-- Inicio do Body -->
+<body class="bg-light">
+
+<header class="bg-dark">
+
+    <!--
+    <div class="container">
+        <div class="col-12 text-light">
+            Logo / Titulo
+        </div>
+    </div>
+    -->
+
+    <!-- Navbar - Inicio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            <!-- <i class="fa-brands fa-rebel"></i> --> 
+            <img src="img/logo_lg_v4.png"> 
+        </a>
+
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="produtos-lista.html">Produtos</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="promocoes.html">Promoções</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="sobre.html">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white" 
+                        href="blog.html">
+                        Blog
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Ícones (agora antes do formulário) -->
+            <div class="d-flex align-items-center me-3">
+
+                <a href="perfil.html" 
+                    class="text-white text-decoration-none me-2 mb-1 fs-4"><i class="fa-regular fa-circle-user"></i></a>
+
+                <a href="favoritos.html" 
+                    class="text-white text-decoration-none me-2 mb-1 fs-4"><i class="fa-regular fa-heart"></i></a>
+
+                <a href="carrinho.html" 
+                    class="text-white text-decoration-none me-5 mb-1 fs-4"><i class="fa-solid fa-bag-shopping"></i></a>
+                
+                <a href="login.html"
+                    class="btn btn-sm btn-success me-1">
+                    <i class="fa-solid fa-right-to-bracket"></i> 
+                    Login 
+                </a>
+                
+                <a href="auth/logout"
+                    class="btn btn-sm btn-warning me-1">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout 
+                </a>
+                
+                <a href="cadastro-bs.html"
+                    class="btn btn-sm btn-primary me-1"
+                    title="Realizar o cadastro">
+                    <i class="fa-solid fa-user-plus"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!-- Navbar - Final -->
+    
+</header>
+
+
+<!-- Main -->
+<main class="py-4">
+    <div class="container">
+        <!-- 1ª Linha -->
+        <div class="row">
+
+            <!-- 1ª Coluna -->
+            <div class="col-2">
+
+                <!-- Card do Produto 01 -->
+                <div class="card">  
+                    <a href="produto.html">                         
+                        <img src="img/produtos/esp32-30-pinos-e-ch340-001.jpg" 
+                        class="card-img-top" alt="ESP32 30 pinos">
+                    </a> 
+
+                    <div class="card-body">
+                        <h5 class="card-title">ESP32 30 pinos</h5>
+                        <p class="card-text"> ESP32 WiFi e Bluetooth com USB-C - 30 Pinos e CH340.</p>
+                        <p class="card-text"> R$ 75,00 </p>
+                        <a href="#" class="btn btn-primary">Addicionar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2ª Coluna -->
+            <div class="col-10">
+
+                <!-- 1a Linha - 2ª Coluna -->
+                <div class="row">
+                    <div class="col-6">
+                        <!-- descrição -->
+                        <div class="card h-100">
+
+                            <div class="card-header bg-primary">
+                                <h5 class="card-title text-light">
+                                    <i class="fa-solid fa-address-card"></i> 
+                                    Descrição
+                                </h5>
+                            </div>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    O Módulo ESP8266 WiFi Serial é um componente eletrônico altamente tecnológico, 
+                                    desenvolvido especialmente para conectar projetos robóticos ou de automação 
+                                    residencial com a Rede Mundial de Computadores (Internet), com maior facilidade 
+                                    e baixo custo. <br> <br>
+                                    
+                                    Ele é composto pelo imponente chip ESP8266 Espressif, suportando as redes mais 
+                                    utilizadas atualmente (802.11 b/g/n), preparado para comunicação sem fio de 
+                                    baixa potência, operando com a rede Wi-Fi em frequência de 2.4GHz, possuindo 
+                                    suporte a WPA e WPA2. <br><br>                                
+                                    
+                                    Possibilta conexão WiFi <br><br> 
+
+                                    Na prática é utilizado para conectar seus projetos a redes de dados sem fio, 
+                                    onde é possível trocar informações entre os microcontroladores, sensores ou 
+                                    enviá-las a um smartphone, impedindo a criação de emaranhados de fios em sua 
+                                    residência, no caso de projetos de automação residencial. <br><br> 
+
+                                    Importante alertar que o Módulo WiFi ESP8266 Serial utiliza tensão de nível de 
+                                    sinal de 3.3V, não podendo o pino RX ser ligado diretamente ao Arduino, sob risco 
+                                    de danos irreversíveis ao módulo. <br><br> 
+
+                                    Garanta maior praticidade no desenvolvimento dos seus projetos eletrônicos, 
+                                    adquira o Módulo WiFi e ganhe tempo na montagem dos seus protótipos, além de 
+                                    conferir melhor visibilidade, evitando fios e quebras de paredes. <br><br> 
+                                </p>
+                                
+
+                            </div>
+                        </div>
+                        <!-- descrição -->
+                    </div>
+
+                    <div class="col-6">
+                        <!-- descrição -->
+                        <div class="card h-100">
+
+                        <div class="card-header bg-info">
+                            <h5 class="card-title text-light">
+                                <i class="fa-solid fa-list-check"></i>
+                                Caracteristicas
+                            </h5>
+                        </div>
+
+                        <div class="card-body">                            
+                            <p class="card-text">
+                                <ul>
+                                    <li>Módulo ESP8266 WiFi Serial;</li>
+                                    <li>Compatível com Arduino, Raspberry PI, ARM, AVR, PIC, etc.;</li>
+                                    <li>Processadores de MAC e Baseband integrados;</li>
+                                    <li>Gestão de Qualidade de Serviço (QoS) integrado;</li>
+                                    <li>Interface I2S para aplicações de áudio;</li>
+                                    <li>Sensor de Temperatura interno;</li>
+                                    <li>Regulador on-chip com baixo dropout para fornecimento de energia aos periféricos integrados;</li>
+                                    <li>Pode ser utilizado como Ponto de Acesso (Acess Point) ou Estação (Station);</li>
+                                    <li>Engine integrada para criptografias WEP, TKIP, AES e WPA;</li>
+                                    <li>Wi-Fi Direct (P2P), soft-AP;</li>
+                                    <li>Antena integrada;</li>
+                                    <li>Protocolo TCP/IP integrado com suporte a IPv4;</li>
+                                    <li>Wi-Fi em frequência de 2.4GHz com suporte a WPA e WPA2;</li>
+                                    <li>Conversor ADC integrado com resolução de 10 bits;</li>
+                                    <li>Evita a criação de emaranhados de fios;</li>
+                                    <li>Excelente relação custo x benefício;</li>
+                                    <li>Datasheet ESP8266.</li>
+                                    </ul>
+                            </p>
+                            
+
+                        </div>
+                        </div>
+                        <!-- descrição -->          
+                    </div>
+                </div>
+                
+                <!-- 2ª Linha - 2ª Coluna  -->
+                <div class="row mt-2">
+                    <div class="col-12 ">
+                        
+
+                        <!-- opniões -->
+                        <div class="card h-100 border-success">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">
+                            <i class="bi bi-check2-circle"></i> Especificações
+                            </h5>                            
+                            <ul>
+                                <li>Modelo: ESP-01;</li>
+                                <li>Chip Principal: ESP8266 Espressif;</li>
+                                <li>Tensão de alimentação: 3.3V;</li>
+                                <li>Potência de saída: +20dBm no modo 802.11b;</li>
+                                <li>Alcance: ~90 metros;</li>
+                                <li>Taxa de dados: 250kbps a 2mbit;</li>
+                                <li>Suporte à redes: 802.11 b/g/n;</li>
+                                <li>Consumo em Standby: &lt;1.0mW;</li>
+                                <li>Processador: 32-bit CPU de baixa potência;</li>
+                                <li>Comunicação: Serial (TX/RX);</li>
+                                <li>Comunicação: TCP e UDP;</li>
+                                <li>Segurança: OPEN/WEP/WPA_PSK/WPA2_PSK/WPA_WPA2_PSK;</li>
+                                <li>Temperatura de trabalho: -40 a 125ºC;</li>
+                                <li>Dimensões: 25x14x3mm;</li>
+                                <li>Peso: 2g.</li>
+                                </ul>
+
+                        </div>
+                        </div>
+                        <!-- opniões -->   
+
+                    </div> 
+                </div>
+            </div>
+        </div>     
+    </div>
+</main>
+<!-- Main -->
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white">
+    <!-- Div Container -->
+    <div class="container py-4">
+        <!-- Div Linha -->
+        <div class="row">
+
+            <!-- Coluna - Links Rápidos -->
+            <div class="col-2  mb-3">
+                <p>Links Rápidos</p>
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white py-1" href="sobre.html">Quem somos</a>
+                    <a class="nav-link text-white py-1" href="contato.html">Fale conosco</a>
+                    <a class="nav-link text-white py-1" href="trabalhe_conosco-bs.html">Trabalhe conosco</a>
+                    <a class="nav-link text-white py-1" href="perfil.html">Meu Perfil</a>
+                    <a class="nav-link text-white py-1" href="blog.html">Blog</a>                        
+                </nav>
+            </div>
+
+            <!-- Coluna - Contatos -->
+            <div class="col-3">
+                <p>Contatos :</p>
+
+                <nav class="nav flex-column">
+                    <a class="nav-link text-white py-1" href="#"><i class="fa-solid fa-headset"></i> +55 (24) 2233-4455</a>
+                    <a class="nav-link text-white py-1" href="contato@ppgmaker.github.io">
+                        <i class="fa-solid fa-envelope"></i>
+                        contato@ppgmaker.github.io
+                    </a>
+                    <a class="nav-link text-white py-1" href="suporte.html">
+                        <i class="fa-solid fa-headset"></i>
+                        Suporte
+                    </a>                    
+                </nav>                
+            </div>
+
+            <!--
+                Redes Sociais - Github, Youtube, Instagran, 
+                                Linkedin, Facebook                
+            -->
+            <div class="col-7 text-end">
+                <p>Rede Social: </p>
+                <a href="https://github.com/luisrodrigonet/" 
+                   target="_blank" title="Acesse nosso GitHub"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" 
+                   target="_blank" title="Acesse canal no Youtube"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" 
+                   target="_blank" title="Acesse o nosso Instagram"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+
+                <a href="https://br.linkedin.com/" 
+                   target="_blank" title="Acesse o nosso Linkedin"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" 
+                   target="_blank" title="Acesse o nosso Facebook"
+                   class="btn btn-sm btn btn-outline-light">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>         
+
+
+        </div>
+        <!-- Div Linha -->
+
+        <hr/>
+
+        <div class="row">
+            <!-- Coluna - Idioma -->
+            <div class="col-2 mb-3">
+                <select class="form-select form-select-sm text-white bg-dark border-secondary" aria-label="Default select idioma">
+                    <option class="bg-dark text-white" value="Portuges" selected>Português</option>
+                    <option class="bg-dark text-white" value="English">English</option>
+                    <option class="bg-dark text-white" value="French">French</option>
+                    <option class="bg-dark text-white" value="Spanish">Spanish</option>
+                    <option class="bg-dark text-white" value="Russian">Russian</option>
+                </select>
+            </div>
+            <!-- Coluna - Idioma -->
+
+            <!-- Coluna - Moeda -->
+            <div class="col-1  mb-3">                
+                <select class="form-select form-select-sm text-white bg-dark border-secondary" aria-label="Default select moeda">
+                    <option value="Real" selected>Real</option>
+                    <option value="US Dollars">US Dollars</option>
+                    <option value="Euro">Euro</option>
+                </select>    
+            </div>
+            <!-- Coluna - Moeda -->
+
+            <!-- Coluna - Links Rápidos -->
+            <div class="col-9  mb-3">
+                <p class="text-end text-secondary mb-0">
+                    <a href="termos.html" class="text-white text-decoration-none">Termos e condições</a> |
+                    <a href="privacidade.html" class="text-white text-decoration-none">Privacidade</a> |
+                    <span class="text-white">© 2026 - Luis Rodrigo Net</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Div Container -->
+</footer>
+<!-- Footer -->
+
+<!-- Não apague a tag "SCRIPT" -->
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- Não apague a tag "SCRIPT" -->
+</body>
+<!-- Final do Body-->
+</html>
