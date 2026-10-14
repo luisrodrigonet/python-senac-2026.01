@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Laço For no Django</title>
+</head>
+<body>
+    <h1>Exemplos com Laço For</h1>
+
+    <h2>1. Lista de Frutas</h2>
+    <ul>
+        {% for fruta in frutas %}
+            <li>Eu gosto de {{ fruta }}.</li>
+        {% empty %}
+            <li>Nenhuma fruta encontrada.</li>
+        {% endfor %}
+    </ul>
+
+    <h2>2. Tabuada Dinâmica do {{ numero }}</h2>
+    <form method="get">
+        <label>Alterar número: </label>
+        <input type="number" name="numero" value="{{ numero }}">
+        <button type="submit">Calcular</button>
+    </form>
+
+    <ul>
+        {% for item in tabuada %}
+            <li>{{ numero }} x {{ item.multiplicador }} = {{ item.resultado }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
