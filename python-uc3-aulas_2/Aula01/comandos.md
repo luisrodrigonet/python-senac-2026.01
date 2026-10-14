@@ -5,4 +5,3 @@
 python .\manage.py runserver 
 ```
 
-sqlite
