@@ -1,3 +1,122 @@
-venv/*
-.venv/*
-python-uc3-aulas/*
+==============================================================================
+.gitignore para Projetos Django 5.2
+==============================================================================
+
+--- Pastas Específicas do Projeto / Cursos ---
+python-uc3-aulas/
+
+--- Ambientes Virtuais (Virtual Environments) ---
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+--- Configurações Locais e Chaves Sensíveis (python-dotenv) ---
+# NUNCA versione credenciais, chaves de API (Anthropic, AWS, etc.) ou SECRET_KEY
+.env
+.env.local
+.env.*.local
+*.env
+
+--- Bytecode e Caches do Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+--- Bancos de Dados Locais ---
+# Ignora SQLite local (em produção/desenvolvimento avançado com psycopg2/PostgreSQL este arquivo não existe)
+*.sqlite3
+*.db
+
+--- Arquivos de Mídia e Uploads (Pillow / Django Media) ---
+# Diretório onde ficam arquivos enviados por usuários; versionar apenas via storage externo (S3, etc.)
+/media/
+
+--- Arquivos Estáticos Coletados (collectstatic / WhiteNoise) ---
+# O WhiteNoise serve a partir daqui em produção, mas o diretório não deve ser versionado
+/staticfiles/
+/static_root/  # Alternativa caso não use WhiteNoise e use o STATIC_ROOT padrão do Django
+
+--- Arquivos de Tradução Compilados (Django i18n) ---
+# Arquivos .po são versionados, mas os .mo compilados não
+*.mo
+
+--- Backups de Banco e Mídia (django-dbbackup) ---
+/backups/
+*.tar
+*.dump
+*.sql
+*.backup
+
+--- Logs e Arquivos Temporários ---
+*.log
+local_settings.py
+celerybeat-schedule
+celerybeat.pid
+
+--- Testes e Cobertura de Código ---
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+--- Jupyter Notebooks (se utilizados para análises) ---
+.ipynb_checkpoints/
+
+--- Ferramentas de Visualização (Graphviz) ---
+# Saídas geradas em formato de imagens/grafos temporários
+*.gv.pdf
+*.gv.png
+*.dot.png
+
+--- Frontend / Node (Tailwind, HTMX, etc.) ---
+# Ignora dependências do Node se estiver compilando CSS/JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+--- IDEs e Editores de Código ---
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+--- Arquivos de Sistema (OS) ---
+.DS_Store
+Thumbs.db
+desktop.ini
