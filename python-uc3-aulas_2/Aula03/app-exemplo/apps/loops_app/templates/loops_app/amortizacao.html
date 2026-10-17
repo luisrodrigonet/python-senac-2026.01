@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulação de Amortização</title>
+</head>
+<body>
+    <h2>Simulador de Quitação de Dívida (Laço While)</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Valor Total (R$):</label>
+        <input type="number" name="valor_total" step="0.01" required>
+        
+        <label>Pagamento Mensal (R$):</label>
+        <input type="number" name="parcela" step="0.01" required>
+        
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if tabela %}
+        <h3>Cronograma de Pagamento:</h3>
+        <table border="1">
+            <tr>
+                <th>Mês</th>
+                <th>Valor Pago</th>
+                <th>Saldo Restante</th>
+            </tr>
+            {% for linha in tabela %}
+            <tr>
+                <td>{{ linha.mes }}</td>
+                <td>R$ {{ linha.pago }}</td>
+                <td>R$ {{ linha.saldo_restante }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+</body>
+</html>

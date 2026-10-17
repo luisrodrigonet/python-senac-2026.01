@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descrição do conteúdo do site">
+	<meta name="keywords" content="palavras-chave separadas por vírgula"> 
+	<meta name="author" content="Nome do autor"> 
+    
+    <title>
+        {% block title %}Python UC3 - 2026.01 {% endblock %}
+    </title>
+
+    <!-- Bootstrap CSS (via jsDelivr CDN) 
+        - https://getbootstrap.com/docs/5.3/getting-started/introduction/ 
+        - https://www.w3schools.com/bootstrap5/bootstrap_get_started.php
+        - https://www.w3schools.com/bootstrap5/    
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+            rel="stylesheet" crossorigin="anonymous"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB">
+
+    <!-- Font Awesome (Ícones via cdnjs / Cloudflare) 
+        - Icones : https://fontawesome.com/search?ic=free-collection 
+    -->
+    <!-- <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> --> 
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+
+
+    <!-- Bloco opcional para estilos customizados adicionais -->
+    {% block styles %}{% endblock %}
+</head>
+<body>
+
+    <!-- Cabeçalho / Barra de navegação -->
+    {% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-layer-group me-2"></i>Django - 2026.1
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" 
+                aria-controls="navContent" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                  
+
+                    <!-- Itens da Barra de Navegação-->
+                    {% block navbar_itens %}
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa-solid fa-house me-1"></i> Início</a>                        
+                    </li>
+                    
+                    {% endblock %}                    
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
+    <!-- Conteúdo principal -->
+    <main class="container my-4">
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer mt-auto py-3 bg-light border-top text-center text-muted">
+        <div class="container">
+            {% block footer %}
+            <span><i class="fa-regular fa-copyright"></i> {% now "Y" %} - Luis Rodrigo Net - Todos os direitos reservados.</span>
+            {% endblock %}
+        </div>
+    </footer>
+
+    <!-- jQuery (via cdnjs / Cloudflare) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (com Popper integrado via jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bloco para scripts customizados da página filha -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

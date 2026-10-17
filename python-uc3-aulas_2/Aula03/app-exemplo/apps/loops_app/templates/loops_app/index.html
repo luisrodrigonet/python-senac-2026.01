@@ -1,0 +1,44 @@
+{% extends "base/_base.html" %}
+
+{# Inicio do conteúdo da página #}
+{% block conteudo %}
+
+<h2>Parte 1 - Revisão </h2>
+
+
+<div class="row pt-3">
+    <div class="col-4">
+                <ul class="list-group">
+
+            <li class="list-group-item active" aria-current="true">
+                Exemplos: <i class="fa-solid fa-face-smile-wink"></i>
+
+            </li>
+
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:pagina_for' %}">
+                    <i class="fa-solid fa-repeat"></i> For
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:jogo_adivinhacao' %}">
+                    <i class="fa-solid fa-dice"></i> Jogo 
+                </a>
+
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:amortizacao' %}">
+                    <i class="fa-solid fa-sack-dollar"></i> Amortização 
+                </a>                        
+
+            </li>
+            <li class="list-group-item">
+                <a class="nav-link" href="{% url 'loops:fatores' %}">
+                    <i class="fa-solid fa-hashtag"></i> Fatores 
+                </a>
+            </li>  
+        </ul>
+    </div>
+</div>
+{% endblock %}
+{# FIM - Conteúdo da página #}
