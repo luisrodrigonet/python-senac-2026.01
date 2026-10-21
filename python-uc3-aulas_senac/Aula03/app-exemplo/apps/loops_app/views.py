@@ -7,7 +7,7 @@ def teste():
 
 
 def index (request):
-    return render(request, 'loops_app/index.html')
+    return render(request, 'loops_app/_base_loops.html')
 
 
 def pagina_for(request):
@@ -32,6 +32,7 @@ def pagina_for(request):
     return render(request, 'loops_app/exemplo_for.html', contexto)
 
 def jogo_adivinhacao(request):
+    
     # Inicializa o segredo e contador na sessão do navegador
     if 'numero_secreto' not in request.session:
         request.session['numero_secreto'] = random.randint(1, 10)
