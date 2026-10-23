@@ -1,0 +1,41 @@
+{% extends "base/_base.html" %}
+
+
+{# Itens do Barra de Navegação #}
+{% block navbar_itens %}
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:index' %}"><i class="fa-solid fa-house me-1"></i> Início</a>                        
+</li>
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:pagina_for' %}"><i class="fa-solid fa-repeat"></i> For</a>                        
+</li>
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:jogo_adivinhacao' %}"><i class="fa-solid fa-dice"></i> Jogo </a>                        
+</li>
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:amortizacao' %}"><i class="fa-solid fa-sack-dollar"></i> Amortização </a>                        
+</li>
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:fatores' %}"><i class="fa-solid fa-hashtag"></i> Fatores </a>                        
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link active" href="{% url 'loops:consolidacao_pedidos' %}"><i class="fa-solid fa-cart-shopping"></i> Pedido  </a>                        
+</li>
+
+{% endblock %}
+{# FIM - Itens do Barra de Navegação #}
+
+
+{# Inicio do conteúdo da página #}
+{% block conteudo %}
+<h1>Python - UC3 - 2026.01</h1>
+<h2>Revisão do uso de Loops</h2>
+{% endblock%}
+{# FIM - Conteúdo da página #}
