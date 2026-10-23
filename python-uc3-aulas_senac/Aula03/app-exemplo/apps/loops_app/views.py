@@ -7,12 +7,14 @@ def teste():
 
 
 def index (request):
-    return render(request, 'loops_app/_base_loops.html')
+    #return render(request, 'loops_app/_base_loops.html')
+    return render(request, 'loops_app/index.html')
 
 
 def pagina_for(request):
     # 1. Iterando sobre listas e range no Python (Backend)
-    frutas = ["Maçã", "Banana", "Cereja", "Morango"]
+    frutas = ["Maçã", "Banana", "Cereja", "Morango", "Abacate", "Pera", "Tomate"]
+    #frutas=[]
     
     # Recebe um número via GET (ex: ?numero=7) ou usa 5 como padrão
     numero = int(request.GET.get('numero', 5))
@@ -29,7 +31,11 @@ def pagina_for(request):
         'numero': numero,
         'tabuada': tabuada,
     }
+
+    #print(contexto)
+
     return render(request, 'loops_app/exemplo_for.html', contexto)
+    #return render(request, 'loops_app/exemplo_for_original.html', contexto)
 
 def jogo_adivinhacao(request):
     
@@ -76,6 +82,7 @@ def amortizacao_divida(request):
         else:
             pago = parcela_mensal
             saldo -= parcela_mensal
+            # saldo = saldo - parcela_mensal
 
         tabela.append({
             'mes': mes,
