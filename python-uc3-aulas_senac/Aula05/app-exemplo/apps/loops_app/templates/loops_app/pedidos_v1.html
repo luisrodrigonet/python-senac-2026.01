@@ -54,8 +54,8 @@
         <ul>
         {% for item in produtos %}
             <li>
-                Produto: {{ item.produto }} - Preço: {{ item.preco }} - 
-                Quantidade: {{ item.quantidade }} - Subtotal: {{ item.subtotal }}
+                Produto: {{ item.produto }} - Preço: R$ {{ item.preco }} - 
+                Quantidade: {{ item.quantidade }} - Subtotal: R$ {{ item.subtotal }}
             </li>        
         {% empty %}
             <li> Não há produtos </li>
@@ -64,6 +64,20 @@
         <hr>
         <h4 class="text-end"> Valor total: {{ total }} </h4>
         <hr> 
+
+        <table>
+            <thead class="border bg-dark text-light">
+                <td> Produtos Unicos  </td>
+            </thead>
+            {% for unico in unicos %}
+                <tr class="border"><td > {{ unico }} </td></tr>
+            {% endfor %} 
+            
+            
+            <tr class="border bg-dark text-light"><td>Qt Unicos</td></tr>
+            <tr class="border"><td> {{ qt_unicos }} </td></tr>
+
+        </table>
 
     </div>
 
