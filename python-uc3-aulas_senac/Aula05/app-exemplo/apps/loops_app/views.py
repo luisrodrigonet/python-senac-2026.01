@@ -1,3 +1,6 @@
+##
+# APP: loops_app - views.py
+##
 import random
 import string
 from django.shortcuts import render
@@ -5,10 +8,8 @@ from django.shortcuts import render
 def teste():
     pass
 
-
 def index (request):
     return render(request, 'loops_app/index.html')
-
 
 def pagina_for(request):
     # 1. Iterando sobre listas e range no Python (Backend)
@@ -121,3 +122,32 @@ def consolidacao_pedidos(request):
     
     # Cálculo do valor total
     valor_total = 0
+
+    produtos_unico=[]
+
+    for pedido in pedidos :
+        #print(pedido)        
+        subtotal=pedido["preco"] * pedido["quantidade"]
+        pedido["subtotal"]=subtotal
+
+        produto=pedido["produto"]
+        if produto not in produtos_unico :
+            produtos_unico.append(produto)
+
+        # debug
+        #print (pedido)  
+        valor_total = valor_total + subtotal
+    
+    qt_unicos = len (produtos_unico)
+    
+    print (produtos_unico)
+    print (f"Valor total: {valor_total}")
+
+    contexto={
+        'produtos': pedidos,
+        'total': valor_total,
+        'unicos': produtos_unico,
+        'qt_unicos': qt_unicos,
+    }
+ 
+    return render (request, 'loops_app/pedidos_v1.html',contexto)

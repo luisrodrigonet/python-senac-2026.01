@@ -1,3 +1,6 @@
+##
+# APP: loops_app - urls.py
+##
 from django.urls import path
 from . import views
 
@@ -14,4 +17,5 @@ urlpatterns = [
     path('amortizacao/', views.amortizacao_divida, name='amortizacao'),
     path('fatores/', views.fatores_primos, name='fatores'),
     #path('pedidos/', views.consolidacao_pedidos, name='consolidacao_pedidos'),
+    path('pedidos/',views.consolidacao_pedidos, name='consolidacao_pedidos'),
 ]

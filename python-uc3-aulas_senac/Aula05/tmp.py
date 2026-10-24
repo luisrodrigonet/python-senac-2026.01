@@ -12,6 +12,8 @@
         produto = p["produto"]
         if produto not in produtos_unicos:
             produtos_unicos.append(produto)
+
+            
     
     quantidade_unicos = len(produtos_unicos)    
     
