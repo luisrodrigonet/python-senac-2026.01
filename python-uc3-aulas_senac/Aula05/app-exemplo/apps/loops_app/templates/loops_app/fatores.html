@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatores Primos</title>
+</head>
+<body>
+    <h2>Decomposição em Fatores Primos</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Digite um número inteiro:</label>
+        <input type="number" name="numero" min="2" required>
+        <button type="submit">Decompor</button>
+    </form>
+
+    {% if fatores %}
+        <p>Os fatores primos de <strong>{{ numero }}</strong> são:</p>
+        <ul>
+            {% for fator in fatores %}
+                <li>{{ fator }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
