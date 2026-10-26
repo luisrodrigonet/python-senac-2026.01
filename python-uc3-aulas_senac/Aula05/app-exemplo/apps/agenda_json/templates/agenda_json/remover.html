@@ -1,0 +1,17 @@
+{% extends "base/_base.html" %}
+
+{% block conteudo %}
+
+<h2>Remover contato da agenda JSON</h2>
+
+<div class="alert alert-warning" role="alert">
+    Confirma a remoção do contato <strong>{{ contato.nome }}</strong>? Esta ação não poderá ser desfeita.
+</div>
+
+<form method="post" action="{% url 'agenda_json:agenda_remover' contato_id %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Confirmar remoção</button>
+    <a href="{% url 'agenda_json:agenda_listar' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+
+{% endblock %}

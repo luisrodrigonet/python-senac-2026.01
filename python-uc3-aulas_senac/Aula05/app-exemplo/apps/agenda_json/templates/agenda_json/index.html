@@ -1,0 +1,39 @@
+{% extends "base/_base.html" %}
+
+{% block conteudo %}
+
+<h2>Agenda JSON - Aula 05</h2>
+
+<a href="{% url 'agenda_json:agenda_adicionar' %}" class="btn btn-primary mb-3">Adicionar contato</a>
+
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for contato in contatos %}
+            <tr>
+                <td>{{ contato.nome }}</td>
+                <td>{{ contato.telefone }}</td>
+                <td>{{ contato.email }}</td>
+                <td class="text-nowrap">
+                    <a href="{% url 'agenda_json:agenda_editar' forloop.counter0 %}" class="btn btn-sm btn-outline-primary">Editar</a>
+                    <a href="{% url 'agenda_json:agenda_remover' forloop.counter0 %}" class="btn btn-sm btn-outline-danger">Remover</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4" class="text-center">Nenhum contato encontrado.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -22,6 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('loop/', include('apps.loops_app.urls')), #Aula 03
+    path('agenda/',include('apps.agenda.urls')), #Aula 05
+    path('agenda-json/', include('apps.agenda_json.urls')),
 ]
 
 if settings.DEBUG:
