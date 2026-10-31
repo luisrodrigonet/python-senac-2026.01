@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('loop/', include('apps.loops_app.urls')), #Aula 03
+    path('agenda/', include('apps.agenda.urls')), #Aula 05
 ]
 
 if settings.DEBUG:

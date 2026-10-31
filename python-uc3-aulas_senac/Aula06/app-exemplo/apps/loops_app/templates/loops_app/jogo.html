@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <h1>Jogo de Adivinhação (1 a 10)</h1>
+    
+    {% if mensagem %}
+        <p><strong>{{ mensagem }}</strong></p>
+    {% endif %}
+
+    {% if not acertou %}
+        <form method="post">
+            {% csrf_token %}
+            <label>Qual é o seu palpite? </label>
+            <input type="number" name="palpite" min="1" max="10" required>
+            <button type="submit">Enviar Palpite</button>
+        </form>
+    {% else %}
+        <a href="">Jogar Novamente</a>
+    {% endif %}
+</body>
+</html>

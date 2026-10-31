@@ -1,0 +1,95 @@
+{% extends "loops_app/_base_loops.html" %}
+
+
+{% block conteudo %}
+
+<!-- Cabeçalho Principal da Página -->
+<header class="pb-3 mb-4 border-bottom">
+    <h1 class="display-6 fw-bold text-primary">
+        <i class="bi bi-code-slash"></i> Exemplos de uso do Laço For no Django
+    </h1>
+</header>
+
+
+<div class="row g-4">
+        
+    <!-- ========================================== -->
+    <!-- SEÇÃO 1: LISTA DE FRUTAS                   -->
+    <!-- ========================================== -->
+    <div class="col-12 col-md-6">
+        <div class="card shadow-sm border-0 h-100 rounded-3">
+            <!-- Cabeçalho do Card -->
+            <div class="card-header bg-primary text-white py-3">
+                <h2 class="h5 mb-0 fw-semibold">1. Lista de Frutas</h2>
+            </div>
+            
+            <!-- Corpo do Card -->
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    {% for fruta in frutas %}
+                        <!-- Item de lista padrão com transição de foco -->
+                        <li class="list-group-item list-group-item-action d-flex align-items-center">
+                            <span class="me-2 text-success">&#10003;</span> Eu gosto de <strong>&nbsp;{{ fruta }}</strong>.
+                        </li>
+                    {% empty %}
+                        <!-- Estado vazio destacado com alerta suave do Bootstrap -->
+                        <li class="list-group-item list-group-item-warning text-center text-muted py-3">
+                            <em>Nenhuma fruta encontrada.</em>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SEÇÃO 2: TABUADA DINÂMICA                  -->
+    <!-- ========================================== -->
+    <div class="col-12 col-md-6">
+        <div class="card shadow-sm border-0 h-100 rounded-3">
+            <!-- Cabeçalho do Card -->
+            <div class="card-header bg-dark text-white py-3">
+                <h2 class="h5 mb-0 fw-semibold">2. Tabuada Dinâmica do número : <span class="badge bg-warning text-dark">{{ numero }}</span></h2>
+            </div>
+            
+            <!-- Corpo do Card -->
+            <div class="card-body">
+                <!-- Formulário estilizado com Input Group -->
+                <form method="get" class="mb-4">
+                    <label for="id_numero" class="form-label text-muted small fw-bold text-uppercase">Alterar número:</label>
+                    <div class="input-group">
+                        <input 
+                            type="number" 
+                            id="id_numero"
+                            name="numero" 
+                            class="form-control" 
+                            placeholder="Digite um número..." 
+                            value="{{ numero }}" 
+                            required
+                        >
+                        <button class="btn btn-primary" type="submit">
+                            Calcular
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Lista de resultados da tabuada -->
+                <ul class="list-group">
+                    {% for item in tabuada %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>{{ numero }} &times; {{ item.multiplicador }}</span>
+                            <span class="badge bg-secondary rounded-pill fs-6">{{ item.resultado }}</span>
+                        </li>
+                    {% empty %}
+                        <li class="list-group-item list-group-item-light text-center text-muted">
+                            Nenhum cálculo disponível.
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consolidação de Pedidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 { color: #333; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .resultado {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .destaque { font-size: 1.2em; font-weight: bold; color: #2196F3; }
+    </style>
+</head>
+<body>
+    <h1>📦 Consolidação de Pedidos</h1>
+    
+    <h2>Lista de Pedidos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço (R$)</th>
+                <th>Quantidade</th>
+                <th>Subtotal (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for pedido in pedidos %}
+            <tr>
+                <td>{{ pedido.produto }}</td>
+                <td>{{ pedido.preco }}</td>
+                <td>{{ pedido.quantidade }}</td>
+                <td>{{ pedido.preco|floatformat:2 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <div class="resultado">
+        <h2>📊 Resultados</h2>
+        <p class="destaque">💰 Valor Total: R$ {{ valor_total|floatformat:2 }}</p>
+        <p class="destaque">🎯 Quantidade de Itens Únicos: {{ quantidade_unicos }}</p>
+        <p><strong>Produtos distintos:</strong> {{ produtos_unicos|join:", " }}</p>
+    </div>
+</body>
+</html>
