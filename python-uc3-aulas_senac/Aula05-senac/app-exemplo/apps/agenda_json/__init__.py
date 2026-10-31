@@ -1,0 +1,1 @@
+"""Agenda de contatos com armazenamento em JSON."""

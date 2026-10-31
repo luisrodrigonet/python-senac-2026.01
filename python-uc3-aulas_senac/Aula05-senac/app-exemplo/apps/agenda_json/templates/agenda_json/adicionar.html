@@ -1,0 +1,29 @@
+{% extends "base/_base.html" %}
+
+{% block conteudo %}
+
+<h2>Adicionar contato à agenda JSON</h2>
+
+{% if erro %}
+<div class="alert alert-danger" role="alert">{{ erro }}</div>
+{% endif %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" value="{{ contato.nome }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="telefone" class="form-label">Telefone</label>
+        <input type="text" class="form-control" id="telefone" name="telefone" value="{{ contato.telefone }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" name="email" value="{{ contato.email }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="{% url 'agenda_json:agenda_listar' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+
+{% endblock %}

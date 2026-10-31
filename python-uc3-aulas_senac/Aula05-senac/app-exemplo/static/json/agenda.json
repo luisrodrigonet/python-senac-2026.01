@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "Luis Rodrigo dot Net",
+        "telefone": "2233-4455",
+        "email": "luis@gmail.com"
+    },
+    {
+        "nome": "Rodrigo",
+        "telefone": "9988-7766",
+        "email": "rodrigo@gmail.com"
+    },
+    {
+        "nome": "Papagaio",
+        "telefone": "5566-7799",
+        "email": "papagaio@lrodrigo.net.br"
+    }
+]

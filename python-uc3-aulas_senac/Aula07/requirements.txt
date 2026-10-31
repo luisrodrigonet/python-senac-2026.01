@@ -1,0 +1,15 @@
+asgiref==3.12.1
+crispy-bootstrap4==2026.2
+crispy-bootstrap5==2026.9
+Django==6.1.2
+django-crispy-forms==2.7
+django-debug-toolbar==8.0.0
+django-widget-tweaks==1.5.1
+numpy==2.5.4
+pandas==3.0.6
+pillow==12.3.0
+python-dateutil==2.9.0.post0
+python-decouple==3.8
+six==1.17.0
+sqlparse==0.6.0
+tzdata==2026.5
