@@ -1,0 +1,22 @@
+[
+  {"nome": "Tênis de Corrida", "descricao": "Calçados com amortecimento reforçado para corrida e caminhada."},
+  {"nome": "Tênis Casual", "descricao": "Tênis voltados para o dia a dia, combinando estilo e conforto."},
+  {"nome": "Sapato Social Masculino", "descricao": "Sapatos formais em couro, como Oxford, Derby e Monk Strap."},
+  {"nome": "Sapato Social Feminino", "descricao": "Scarpins, peep toes e modelos clássicos para eventos sociais."},
+  {"nome": "Sandálias", "descricao": "Modelos abertos, rasteiras, anabelas e sandálias de salto."},
+  {"nome": "Chinelos e Slides", "descricao": "Calçados leves e confortáveis para momentos de lazer e descanso."},
+  {"nome": "Botas e Coturnos", "descricao": "Calçados de cano médio a longo para inverno, trilhas ou estilo urbano."},
+  {"nome": "Mocassins e Docksides", "descricao": "Calçados casuais clássicos sem cadarço, práticos e elegantes."},
+  {"nome": "Sapatilhas", "descricao": "Calçados femininos baixos e fechados para uso cotidiano."},
+  {"nome": "Chuteiras de Campo", "descricao": "Calçados com travas para futebol em grama natural."},
+  {"nome": "Chuteiras Society", "descricao": "Calçados com travas baixas de borracha para grama sintética."},
+  {"nome": "Chuteiras de Futsal", "descricao": "Tênis de solado liso de borracha para quadras de salão."},
+  {"nome": "Tênis de Basquete", "descricao": "Calçados com cano médio/alto e foco em estabilidade e tração."},
+  {"nome": "Tênis de Skate", "descricao": "Calçados com sola reta vulcanizada e reforço nas costuras."},
+  {"nome": "Calçados de Trilha (Hiking)", "descricao": "Botas e tênis robustos para terrenos acidentados e montanhosos."},
+  {"nome": "Pantufas", "descricao": "Calçados térmicos acolchoados para uso doméstico."},
+  {"nome": "Alpargatas", "descricao": "Calçados leves de lona e solado de corda ou borracha."},
+  {"nome": "Mules e Tamancos", "descricao": "Modelos abertos no calcanhar para praticidade ao calçar."},
+  {"nome": "Calçados de Segurança (EPI)", "descricao": "Botinas e calçados com biqueira reforçada para trabalho pesado."},
+  {"nome": "Calçados Infantis", "descricao": "Tênis e sapatos anatômicos desenvolvidos para crianças."}
+]

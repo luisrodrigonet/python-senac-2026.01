@@ -1,0 +1,81 @@
+[
+  {"nome": "Nike Air Zoom Pegasus 40", "categoria": "Tênis de Corrida", "descricao": "Amortecimento responsivo para treinos diários e maratonas.", "preco": "799.90", "quantidade_estoque": 25},
+  {"nome": "Adidas Ultraboost Light", "categoria": "Tênis de Corrida", "descricao": "Espuma Boost ultraleve com retorno de energia superior.", "preco": "999.99", "quantidade_estoque": 18},
+  {"nome": "Asics Gel-Nimbus 26", "categoria": "Tênis de Corrida", "descricao": "Máximo conforto e proteção de impacto para corridas longas.", "preco": "1099.00", "quantidade_estoque": 12},
+
+  {"nome": "Converse Chuck Taylor All Star", "categoria": "Tênis Casual", "descricao": "O clássico tênis em lona de cano baixo para o dia a dia.", "preco": "299.90", "quantidade_estoque": 50},
+  {"nome": "Vans Old Skool Casual", "categoria": "Tênis Casual", "descricao": "Cabedal resistente em camurça e lona com sidestripe icônica.", "preco": "379.90", "quantidade_estoque": 35},
+  {"nome": "Adidas Stan Smith", "categoria": "Tênis Casual", "descricao": "Visual minimalista em couro sintético reciclado.", "preco": "449.90", "quantidade_estoque": 22},
+
+  {"nome": "Sapato Oxford Cap Toe Couro", "categoria": "Sapato Social Masculino", "descricao": "Sapato formal clássico com fechamento fechado em couro legítimo.", "preco": "489.00", "quantidade_estoque": 15},
+  {"nome": "Sapato Derby Brogue Tabaco", "categoria": "Sapato Social Masculino", "descricao": "Design detalhado com perfurações artesanais e couro nobre.", "preco": "520.00", "quantidade_estoque": 10},
+  {"nome": "Sapato Monk Strap Fivela Dupla", "categoria": "Sapato Social Masculino", "descricao": "Fechamento moderno por fivela dupla em tom café polido.", "preco": "550.00", "quantidade_estoque": 8},
+
+  {"nome": "Scarpin Clássico Salto Médio", "categoria": "Sapato Social Feminino", "descricao": "Scarpin em couro bico fino com salto fino de 7cm.", "preco": "319.90", "quantidade_estoque": 20},
+  {"nome": "Scarpin Salto Bloco Nude", "categoria": "Sapato Social Feminino", "descricao": "Elegância com conforto e estabilidade em salto bloco de 5cm.", "preco": "289.00", "quantidade_estoque": 25},
+  {"nome": "Peep Toe Salto Alto Verniz", "categoria": "Sapato Social Feminino", "descricao": "Acabamento brilhante em verniz com abertura frontal discreta.", "preco": "339.90", "quantidade_estoque": 14},
+
+  {"nome": "Sandália Rasteira Tiras Douradas", "categoria": "Sandálias", "descricao": "Rasteirinha delicada em tiras finas metálicas para o verão.", "preco": "129.90", "quantidade_estoque": 40},
+  {"nome": "Sandália Anabela Corda Natural", "categoria": "Sandálias", "descricao": "Salto plataforma anabela revestido com corda trançada.", "preco": "219.90", "quantidade_estoque": 18},
+  {"nome": "Sandália Salto Fino Tira Única", "categoria": "Sandálias", "descricao": "Minimalista, ideal para festas, formaturas e casamentos.", "preco": "259.00", "quantidade_estoque": 16},
+
+  {"nome": "Chinelo Havaianas Brasil Logo", "categoria": "Chinelos e Slides", "descricao": "Borracha macia clássica com a bandeira do Brasil nas tiras.", "preco": "49.90", "quantidade_estoque": 100},
+  {"nome": "Slide Rider Infinity", "categoria": "Chinelos e Slides", "descricao": "Chinelo slide anatômico com faixa larga acolchoada.", "preco": "89.90", "quantidade_estoque": 45},
+  {"nome": "Chinelo Slide Adilette Aqua", "categoria": "Chinelos e Slides", "descricao": "Secagem rápida e solado em EVA moldado em peça única.", "preco": "149.90", "quantidade_estoque": 30},
+
+  {"nome": "Bota Coturno Tratorada Couro", "categoria": "Botas e Coturnos", "descricao": "Solado tratorado robusto com cano médio e zíper lateral.", "preco": "389.90", "quantidade_estoque": 20},
+  {"nome": "Bota Chelsea Couro Nobuck", "categoria": "Botas e Coturnos", "descricao": "Design slip-on com elásticos laterais, prático e atemporal.", "preco": "429.00", "quantidade_estoque": 15},
+  {"nome": "Coturno Militar Reforçado", "categoria": "Botas e Coturnos", "descricao": "Cabedal de alta durabilidade com costuras quádruplas.", "preco": "459.90", "quantidade_estoque": 12},
+
+  {"nome": "Mocassim Penny Loafer Preto", "categoria": "Mocassins e Docksides", "descricao": "Mocassim clássico sem cadarço em couro com brilho suave.", "preco": "349.90", "quantidade_estoque": 17},
+  {"nome": "Dockside Náutico Havana", "categoria": "Mocassins e Docksides", "descricao": "Solado de borracha antiderrapante com cordões laterais 360°.", "preco": "299.00", "quantidade_estoque": 14},
+  {"nome": "Mocassim Drive Camurça Bege", "categoria": "Mocassins e Docksides", "descricao": "Solado bipartido com gominhos em borracha para dirigir.", "preco": "319.00", "quantidade_estoque": 19},
+
+  {"nome": "Sapatilha Bico Fino Conforto", "categoria": "Sapatilhas", "descricao": "Sapatilha flexível com acolchoamento interno no calcanhar.", "preco": "139.90", "quantidade_estoque": 30},
+  {"nome": "Sapatilha Boneca Verniz Preto", "categoria": "Sapatilhas", "descricao": "Estilo Mary Jane com tira sobre o peito do pé e fivela.", "preco": "169.90", "quantidade_estoque": 24},
+  {"nome": "Sapatilha Básica Matelassê", "categoria": "Sapatilhas", "descricao": "Padrão acolchoado com laço delicado na biqueira.", "preco": "119.90", "quantidade_estoque": 35},
+
+  {"nome": "Chuteira Nike Mercurial Vapor Campo", "categoria": "Chuteiras de Campo", "descricao": "Placa leve com travas chevron para máxima aceleração.", "preco": "649.90", "quantidade_estoque": 20},
+  {"nome": "Chuteira Adidas Predator Club FG", "categoria": "Chuteiras de Campo", "descricao": "Elementos texturizados no cabedal para precisão no chute.", "preco": "499.90", "quantidade_estoque": 18},
+  {"nome": "Chuteira Puma Future Match Campo", "categoria": "Chuteiras de Campo", "descricao": "Ajuste adaptativo com tecnologia Fuzionfit360.", "preco": "529.90", "quantidade_estoque": 15},
+
+  {"nome": "Chuteira Society Umbro Velocita", "categoria": "Chuteiras de Society", "descricao": "Microtravas de borracha para ótima tração no sintético.", "preco": "229.90", "quantidade_estoque": 28},
+  {"nome": "Chuteira Society Nike Phantom GX", "categoria": "Chuteiras de Society", "descricao": "Cabedal em mesh macio com entressola de amortecimento leve.", "preco": "479.90", "quantidade_estoque": 16},
+  {"nome": "Chuteira Society Penalty Seis", "categoria": "Chuteiras de Society", "descricao": "Solado com pontos de giro que auxiliam na mudança de direção.", "preco": "189.90", "quantidade_estoque": 32},
+
+  {"nome": "Tênis Futsal Topper Dominator Pro", "categoria": "Chuteiras de Futsal", "descricao": "Cabedal com costuras reforçadas e sola non-marking de borracha.", "preco": "199.90", "quantidade_estoque": 40},
+  {"nome": "Tênis Futsal Penalty Max 1000", "categoria": "Chuteiras de Futsal", "descricao": "Tecnologia de amortecimento e máxima durabilidade para quadra.", "preco": "359.90", "quantidade_estoque": 20},
+  {"nome": "Tênis Futsal Joma Top Flex", "categoria": "Chuteiras de Futsal", "descricao": "Construção em couro flexível, referência mundial no futsal.", "preco": "429.90", "quantidade_estoque": 15},
+
+  {"nome": "Tênis Basquete Nike LeBron Witness 8", "categoria": "Tênis de Basquete", "descricao": "Unidade Max Air de baixo perfil com contenção lateral.", "preco": "749.99", "quantidade_estoque": 14},
+  {"nome": "Tênis Basquete Under Armour Lockdown 6", "categoria": "Tênis de Basquete", "descricao": "Cabedal em couro durável com painéis de malha respirável.", "preco": "399.90", "quantidade_estoque": 22},
+  {"nome": "Tênis Basquete Puma MB.01", "categoria": "Tênis de Basquete", "descricao": "Amortecimento Nitro Foam e tração multidirecional de quadra.", "preco": "899.90", "quantidade_estoque": 10},
+
+  {"nome": "Tênis Nike SB Dunk Low Pro", "categoria": "Tênis de Skate", "descricao": "Unidade Zoom Air no calcanhar e língua acolchoada para manobras.", "preco": "899.99", "quantidade_estoque": 8},
+  {"nome": "Tênis Vans Skate Sk8-Hi", "categoria": "Tênis de Skate", "descricao": "Cano alto estruturado com reforços Duracap e sola waffle.", "preco": "499.90", "quantidade_estoque": 18},
+  {"nome": "Tênis DC Shoes Kalis Vulc", "categoria": "Tênis de Skate", "descricao": "Construção vulcanizada flexível com absorção de impacto em EVA.", "preco": "329.90", "quantidade_estoque": 25},
+
+  {"nome": "Bota Trilha Salomon X Ultra 4", "categoria": "Calçados de Trilha (Hiking)", "descricao": "Chassi de estabilização e sola Contagrip para terrenos lamacentos.", "preco": "1199.00", "quantidade_estoque": 10},
+  {"nome": "Tênis Columbia Redmond III Waterproof", "categoria": "Calçados de Trilha (Hiking)", "descricao": "Membrana impermeável e respirável com excelente tração.", "preco": "749.00", "quantidade_estoque": 15},
+  {"nome": "Bota Timberland Chocorua Trail Gore-Tex", "categoria": "Calçados de Trilha (Hiking)", "descricao": "Couro premium à prova d'água com proteção de tornozelo.", "preco": "899.90", "quantidade_estoque": 12},
+
+  {"nome": "Pantufa Fechada Peluciada Quentinha", "categoria": "Pantufas", "descricao": "Forro térmico em lã sintética com solado antiderrapante em borracha.", "preco": "79.90", "quantidade_estoque": 40},
+  {"nome": "Pantufa Chinelo Plush Acolchoada", "categoria": "Pantufas", "descricao": "Espuma de memória viscoelástica para alívio plantar em casa.", "preco": "69.90", "quantidade_estoque": 50},
+  {"nome": "Pantufa Bota Térmica Soft", "categoria": "Pantufas", "descricao": "Cano médio em soft para aquecimento integral dos pés no inverno.", "preco": "99.90", "quantidade_estoque": 30},
+
+  {"nome": "Alpargata Havaianas Origine Tradicional", "categoria": "Alpargatas", "descricao": "Cabedal de lona 100% algodão e sola de borracha legítima.", "preco": "89.90", "quantidade_estoque": 35},
+  {"nome": "Alpargata Listrada Náutica", "categoria": "Alpargatas", "descricao": "Estilo marinheiro com entressola revestida em fita de juta.", "preco": "99.90", "quantidade_estoque": 28},
+  {"nome": "Alpargata Couro Perfurado", "categoria": "Alpargatas", "descricao": "Couro leve com microperfurações para alta respirabilidade.", "preco": "149.90", "quantidade_estoque": 20},
+
+  {"nome": "Mule Feminino Detalhe Corrente", "categoria": "Mules e Tamancos", "descricao": "Frente fechada com adereço em corrente dourada e calcanhar livre.", "preco": "159.90", "quantidade_estoque": 25},
+  {"nome": "Tamanco Salto Grosso Couro Caramelo", "categoria": "Mules e Tamancos", "descricao": "Tiras largas no peito do pé com salto bloco fachetado.", "preco": "179.90", "quantidade_estoque": 22},
+  {"nome": "Mule Rasteiro Bico Fino Animal Print", "categoria": "Mules e Tamancos", "descricao": "Estampa em pelica sintética com solado plano emborrachado.", "preco": "139.90", "quantidade_estoque": 18},
+
+  {"nome": "Botina de Segurança com Bico de Aço", "categoria": "Calçados de Segurança (EPI)", "descricao": "Couro relax resistente com solado de poliuretano bidensidade.", "preco": "149.90", "quantidade_estoque": 45},
+  {"nome": "Tênis de Segurança Biqueira de Composite", "categoria": "Calçados de Segurança (EPI)", "descricao": "Proteção dielétrica sem componentes metálicos para eletricistas.", "preco": "219.00", "quantidade_estoque": 30},
+  {"nome": "Bota de PVC Cano Longo Impermeável", "categoria": "Calçados de Segurança (EPI)", "descricao": "Bota branca sanitária para frigoríficos e ambientes úmidos.", "preco": "69.90", "quantidade_estoque": 60},
+
+  {"nome": "Tênis Infantil Escolar com Fecho de Contato", "categoria": "Calçados Infantis", "descricao": "Fácil calce com tiras colantes e biqueira de borracha reforçada.", "preco": "129.90", "quantidade_estoque": 50},
+  {"nome": "Sandália Infantil Anatômica Baby", "categoria": "Calçados Infantis", "descricao": "Suporte ao arco plantar para os primeiros passos da criança.", "preco": "99.90", "quantidade_estoque": 35},
+  {"nome": "Bota Galocha Infantil Antiderrapante", "categoria": "Calçados Infantis", "descricao": "Impermeável em borracha colorida para dias chuvosos.", "preco": "89.90", "quantidade_estoque": 40}
+]
